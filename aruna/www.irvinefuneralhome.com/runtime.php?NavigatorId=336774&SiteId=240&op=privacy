@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+<title>Privacy Policy</title>
+<meta name="Keywords" content="Brockville Funeral Homes, funeral home, cremation, cremation in brockville, barclay funeral home, obituaries, death notice, funerals,  "> 
+<meta name="Description" content="Brockville Funeral Homes, funeral home, cremation, cremation in brockville, barclay funeral home, obituaries, death notice, funerals,"> 
+<script>t=new Date();tomorrow=new Date(t.getYear(), t.getMonth(), t.getDate()+1);document.write("<meta http-equiv='Expires' content='" + tomorrow.toGMTString() + "'>");</script>
+
+		<script>
+		function insertDate()
+		{
+			var today,i,ar,ampm;
+			today = new Date();
+			ar=Array('January','February','March','April','May','June','July','August','September','October','November','December');
+			document.write(' ' + ar[today.getMonth()]);
+			document.write(' ' + today.getDate());
+			if ((navigator.appName=='Netscape')&&(parseFloat(navigator.appVersion)<=4.01))
+			{
+				i=today.getYear();
+					if ((i>=0)&&(i<=99))
+					{
+						if (i<=9) i='190'+i;
+						else i='19'+i;
+					}
+			}
+			else
+			{
+				i=today.getFullYear();
+			}
+			document.write(', ' + i);
+		}
+		</script>
+		
+		<style type='text/css'>
+		<!--
+
+		body { margin-right:0px; margin-left:0px; margin-top:0px; margin-bottom:0px; }
+
+		A.b { text-decoration:none; }
+		A.b:link, A.b:visited, A.b:active { color: #FFFFFF; }
+		A.b:hover { color: #FF0000; }
+
+		A.bsel { text-decoration:none; }
+		A.bsel:link, A.bsel:visited, A.bsel:active { color: #FF0000; }
+		A.bsel:hover { color: #FF0000; }
+		
+		-->
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="reset.css" />
+<link rel="stylesheet" type="text/css" href="core.css" />
+<link rel="stylesheet" type="text/css" href="include/themelibrary/system/js/thickbox.css" />
+<script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2"></script>
+<script type="text/javascript" src="adv_tunnel.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.2.72.js"></script>
+<script type="text/javascript" src="include/themelibrary/system/js/thickbox.js"></script>
+
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="ie6.css" />
+<script type="text/javascript" src="dd_belated_pngfix.js"></script>
+<script type="text/javascript" src="ie6.js"></script>
+<![endif]-->
+</head>
+
+<body id='frp_siteid_240' class='frp_navigator_336774 frp_section_home frp_template_ap-v1 frp_branch_1' topmargin='0' leftmargin='0' marginheight='0' marginwidth='0'  bgcolor='#FFFFFF' link='#FF0000' text='#000000'>
+<!Brockville Funeral Homes, funeral home, cremation, cremation in brockville, barclay funeral home, obituaries, death notice, funerals,  >
+
+
+<div id="bggradient"></div><div id="sitewrapperTP">     <div id="pagewrapper">  <div id="header">      <div id="logo">    <p><span>Irvine Memorial</span></p>      </div>      <ul id="navigation" class="navigation" style="margin: 0px;">    <li id="entersite-btn"><a href="home.html"><span>Enter Site</span></a></li>    <li id="condolence-btn"><A HREF='./runtime.php?SiteId=240&NavigatorId=37306' style=""></A></li>      </ul>  </div>    <div id="bodywrapper">      <div id="welcome">        <h1>Welcome</h1>        <p>Thank you for taking the time to visit our web site. A great deal of time and effort has gone into providing this service to our community and the families we serve. We are constantly enhancing and updating the information in this medium and hope that you find it helpful and convenient. If you have any questions or would like to share any suggestions on how we could improve this site, we value and encourage input. We are here to continue to provide the highest standards for our community and to the families that we serve.</p><br> <a class="thickbox" href="./funeral-preplanning.html?KeepThis=true&TB_iframe=true&height=600&width=960"><img align="middle" style="margin-bottom: 20px;" alt="Are You Prepared? Take the Test!" src="preplanningGraphic.png" title="Are You Prepared? Take the Test!"> </a>     </div>        <div id="column1a">              <div class="module" id="services">      <h2><span>Our Services</span></h2>      <p><img src="bom-logo.png" id="bomLogo" />          <script>           var showRecords = function(section)           {        if(section == "current"){            active = "CurrentRecords";            inactive = "PastRecords";        } else {            active = "PastRecords";            inactive = "CurrentRecords";        }        document.getElementById(active).style.display = "block";        document.getElementById(inactive).style.display = "none";           }          </script>      </p>      <div id="servicecontrols">          <a onclick="showRecords('current');">Current Services</a>          <span class="sep"> | </span>          <a onclick="showRecords('past');">Past Services</a>      </div>      <div style="display: block;" id="CurrentRecords">          <module params='holder'>CURRENTFUNERALS</module>      </div>      <div style="display: none;" id="PastRecords">          <module params="past">PASTFUNERALS</module>      </div>      <script>showRecords("current");</script>        </div>          </div> <!--column1a-->        <div id="column1b">              <div class="module" id="localweather">      <h2><span>Local Weather</span></h2>      <div class="modulewrapper">          <module params="Brockville Ontario">LOCAL_WEATHER</module>      </div>        </div>                <div class="module" id="localairlines">      <h2>Local Airline Information</h2>      <div class="modulewrapper">          <module params='holder'>FLIGHT_INFO</module>      </div>        </div>          </div> <!--column1b-->      </div> <!-- #bodywrapper -->        <div class="clear"></div>    </div> <!-- #pagewrapper -->        <div id="footer">  <p>4 James St.| Brockville, Ontario K6V 1J9 | Phone: (613) 342-2828<br/>  2451 County Rd. 15 P.O. Box 44 | Maitland, Ontario K0E 1P0 | Phone: (613) 348-3405<br/>  <center><a href='https://irvinefuneral.frontrunnerpro.com/' target='_new' style='text-decoration:none'>Admin</a>&nbsp;|&nbsp;<a href='runtime.php?NavigatorId=336774&SiteId=240&op=privacy' style='text-decoration:none'>Privacy Policy</a>&nbsp;|&nbsp;<a href='runtime.php?SiteId=240&NavigatorId=37320' style='text-decoration:none'>Site Map</a>&nbsp;|&nbsp;Matthews IMS 4.0 | Powered by <a href='http://www.frontrunnerprofessional.com/' target='_new' style='text-decoration:none'>FrontRunner</a><a href='include/sitelist/sitelist.php'><img src='include/clearpixel.gif' width='1' height='1' border='0' align='absmiddle'></a></center></p>    </div> <!-- #footer -->    </div> <!--#sitewrapper -->   <!-- 
+
+<p><span lang="EN-CA"></span></p>
+<h2><span lang="EN-CA"></span>&nbsp;</h2>
+<h2><span lang="EN-CA">Irvine Memorial Privacy Policy</span></h2>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<p><span lang="EN-CA">At, Irvine Memorial, we understand that the 
+privacy of our visitors and the knowledge of our use of information collected 
+from each visitor is important in our activities. Please feel free to read our 
+privacy policy and we encourage you to contact our firm about any of the 
+information located below if you need further assistance.</span></p>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<p><span lang="EN-CA">Contact Information:<br /></span></p>
+<p><span lang="EN-CA">If you feel that there is a need to contact 
+our firm, please use one of the following methods:</span></p>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<p><span lang="EN-CA"><u>Mail</u>:</span></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">Irvine Memorial</span><span lang="EN-CA">4 James Street East<br><br>Brockville, ON, CA<BR>K6V1J9</span><span lang="EN-CA">K6V1J9</span></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA"><u>Phone</u>:<br /></span></p>
+<p><span lang="EN-CA">613-342-2828</span></p>
+<p><span lang="EN-CA"><u>Email 
+Address</u>:<br /><br />irvinefh@gmail.com</span><span lang="EN-CA">&nbsp;</span></p>
+<p><strong><span lang="EN-CA"></span></strong>&nbsp;</p>
+<p><strong><span lang="EN-CA">Your IP 
+address:</span></strong></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">We collect the IP Address and Domain Name 
+that is used when surfing our web site. We use this information for Site Traffic 
+Statistics and analysis and only retain our last 60 visitors. We also receive 
+your IP Address when you complete a search on our site inorder to help our firm 
+better recognize what is being searched by our visitors. All IP Addresses and 
+Domain Names are kept with the upmost confidentiality.</span></p>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<h1><span lang="EN-CA">Use of Cookies</span></h1>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">A cookie is used by SiteMajic only when 
+there is persistent data that is required to use the Web Site, ie. 
+Administration Mode, and when an E-Commerce order form is being completed. For 
+general viewing of pages, there are no use of cookies.</span></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">When a user is wishing to purchase the 
+product(s) that they have chosen they will be asked to complete a online form. 
+When a user completes a section of the form and clicks on the �Next� button, not 
+only does the form progress to the Next page but a cookie is created on the 
+visitors computer with the information that they just completed. The purpose of 
+the shopping basket cookie is to remember your information so that if you leave 
+or get disconnected and come back to the order form our server will be able to 
+complete the sections of the order form for you including product 
+selected.</span></p>
+<p><span lang="EN-CA"></span></p>
+<h1><span lang="EN-CA"></span>&nbsp;</h1>
+<h1><span lang="EN-CA">Security Monitoring</span></h1>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">All login attempts to Administration Mode 
+will be monitored by ittWeb.com. Each failed attempt is written back to the 
+server and analyzed by the staff of ittWeb.com. If a user attempts to login to 
+any SiteMajic site and fails 10 times, the user is �locked out� and will need to 
+contact ittWeb.com for further direction.</span></p>
+<p><span lang="EN-CA"></span></p>
+<h1><span lang="EN-CA"></span>&nbsp;</h1>
+<h1><span lang="EN-CA">E-Commerce Module</span></h1>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">Our E-Commerce Module incorporates the SSL 
+technology provided by InternetSecure, a third party transaction company. When 
+you are completing the ordering process the final step will take you from 
+Irvine Memorial web site to InternetSecure 128-bit encrypted page. There your 
+credit card information will be taken an the order will either be approved or 
+declined. If your order is approved, Irvine Memorial receives only a confirmation 
+number that your order was approved and a list of the items that has been 
+ordered. The credit card information is not recorded either through Irvine Memorial 
+or InternetSecure. If you have any questions please feel free to ask <a href="mailto:accounting@ittweb.com">accounting@ittweb.com</a>.</span></p>
+<p><span lang="EN-CA"></span></p>
+<h1><span lang="EN-CA"></span>&nbsp;</h1>
+<h1><span lang="EN-CA">Questions &amp; Comments</span></h1>
+<p><strong><span lang="EN-CA"></span></strong></p>
+<p><span lang="EN-CA">If you have questions, comments or concerns 
+with either the way we use the information that is collected from your web 
+browser or our privacy policy, please feel free to contact our firm.</span></p>
+<p><span lang="EN-CA"></span>&nbsp;</p><img src='include/navassist.php?sid=240&nid=336774&a=20&u=&adm=0&o=privacy' style='position:absolute;top:0px;left:0px'> -->
+<!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+<script type="text/javascript" language="JavaScript">var site="s22irvinefh"</script>
+<script type="text/javascript" language="JavaScript1.2" src="http://s22.sitemeter.com/js/counter.js?site=s22irvinefh">
+</script>
+<noscript>
+<a href="http://s22.sitemeter.com/stats.asp?site=s22irvinefh" target="_top">
+<img src="http://s22.sitemeter.com/meter.asp?site=s22irvinefh" alt="Site Meter" border="0"/></a>
+</noscript>
+<!-- Copyright (c)2005 Site Meter -->
+<!--WEBBOT bot="HTMLMarkup" Endspan -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<html><head>
+
+<title>Privacy Policy</title>
+<script>t=new Date();tomorrow=new Date(t.getYear(), t.getMonth(), t.getDate()+1);document.write("<meta http-equiv='Expires' content='" + tomorrow.toGMTString() + "'>");</script>
+
+		<script>
+		function insertDate()
+		{
+			var today,i,ar,ampm;
+			today = new Date();
+			ar=Array('January','February','March','April','May','June','July','August','September','October','November','December');
+			document.write(' ' + ar[today.getMonth()]);
+			document.write(' ' + today.getDate());
+			if ((navigator.appName=='Netscape')&&(parseFloat(navigator.appVersion)<=4.01))
+			{
+				i=today.getYear();
+					if ((i>=0)&&(i<=99))
+					{
+						if (i<=9) i='190'+i;
+						else i='19'+i;
+					}
+			}
+			else
+			{
+				i=today.getFullYear();
+			}
+			document.write(', ' + i);
+		}
+		</script>
+		
+		<style type='text/css'>
+		<!--
+
+		body { margin-right:0px; margin-left:0px; margin-top:0px; margin-bottom:0px; }
+
+		A.b { text-decoration:none; }
+		A.b:link, A.b:visited, A.b:active { color: white; }
+		A.b:hover { color: red; }
+
+		A.bsel { text-decoration:none; }
+		A.bsel:link, A.bsel:visited, A.bsel:active { color: red; }
+		A.bsel:hover { color: red; }
+		
+		-->
+</style>
+
+
+
+
+</head>
+
+<body id='frp_siteid_240' class='frp_navigator_410839 frp_section_home frp_template_funeral-preplanning frp_branch_1' topmargin='0' leftmargin='0' marginheight='0' marginwidth='0'  bgcolor='#FFFFFF'>
+
+
+<style type="text/css">    #TB_title {background-color: #000000 !important; color: #FFFFFF !important;}</style><div style="height: 65px; background: #283a20 url(popup-header-bg.png) 50% 50% no-repeat;"></div><iframe src="http://www.thefuneralplanningsite.ca/are-you-prepared/step-1-a-new-reality/" style="width: 985px; height: 543px;">
+
+<p><span lang="EN-CA"></span></p>
+<h2><span lang="EN-CA"></span>&nbsp;</h2>
+<h2><span lang="EN-CA">Irvine Memorial Privacy Policy</span></h2>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<p><span lang="EN-CA">At, Irvine Memorial, we understand that the 
+privacy of our visitors and the knowledge of our use of information collected 
+from each visitor is important in our activities. Please feel free to read our 
+privacy policy and we encourage you to contact our firm about any of the 
+information located below if you need further assistance.</span></p>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<p><span lang="EN-CA">Contact Information:<br /></span></p>
+<p><span lang="EN-CA">If you feel that there is a need to contact 
+our firm, please use one of the following methods:</span></p>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<p><span lang="EN-CA"><u>Mail</u>:</span></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">Irvine Memorial</span><span lang="EN-CA">4 James Street East<br><br>Brockville, ON, CA<BR>K6V1J9</span><span lang="EN-CA">K6V1J9</span></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA"><u>Phone</u>:<br /></span></p>
+<p><span lang="EN-CA">613-342-2828</span></p>
+<p><span lang="EN-CA"><u>Email 
+Address</u>:<br /><br />irvinefh@gmail.com</span><span lang="EN-CA">&nbsp;</span></p>
+<p><strong><span lang="EN-CA"></span></strong>&nbsp;</p>
+<p><strong><span lang="EN-CA">Your IP 
+address:</span></strong></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">We collect the IP Address and Domain Name 
+that is used when surfing our web site. We use this information for Site Traffic 
+Statistics and analysis and only retain our last 60 visitors. We also receive 
+your IP Address when you complete a search on our site inorder to help our firm 
+better recognize what is being searched by our visitors. All IP Addresses and 
+Domain Names are kept with the upmost confidentiality.</span></p>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<h1><span lang="EN-CA">Use of Cookies</span></h1>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">A cookie is used by SiteMajic only when 
+there is persistent data that is required to use the Web Site, ie. 
+Administration Mode, and when an E-Commerce order form is being completed. For 
+general viewing of pages, there are no use of cookies.</span></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">When a user is wishing to purchase the 
+product(s) that they have chosen they will be asked to complete a online form. 
+When a user completes a section of the form and clicks on the �Next� button, not 
+only does the form progress to the Next page but a cookie is created on the 
+visitors computer with the information that they just completed. The purpose of 
+the shopping basket cookie is to remember your information so that if you leave 
+or get disconnected and come back to the order form our server will be able to 
+complete the sections of the order form for you including product 
+selected.</span></p>
+<p><span lang="EN-CA"></span></p>
+<h1><span lang="EN-CA"></span>&nbsp;</h1>
+<h1><span lang="EN-CA">Security Monitoring</span></h1>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">All login attempts to Administration Mode 
+will be monitored by ittWeb.com. Each failed attempt is written back to the 
+server and analyzed by the staff of ittWeb.com. If a user attempts to login to 
+any SiteMajic site and fails 10 times, the user is �locked out� and will need to 
+contact ittWeb.com for further direction.</span></p>
+<p><span lang="EN-CA"></span></p>
+<h1><span lang="EN-CA"></span>&nbsp;</h1>
+<h1><span lang="EN-CA">E-Commerce Module</span></h1>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">Our E-Commerce Module incorporates the SSL 
+technology provided by InternetSecure, a third party transaction company. When 
+you are completing the ordering process the final step will take you from 
+Irvine Memorial web site to InternetSecure 128-bit encrypted page. There your 
+credit card information will be taken an the order will either be approved or 
+declined. If your order is approved, Irvine Memorial receives only a confirmation 
+number that your order was approved and a list of the items that has been 
+ordered. The credit card information is not recorded either through Irvine Memorial 
+or InternetSecure. If you have any questions please feel free to ask <a href="mailto:accounting@ittweb.com">accounting@ittweb.com</a>.</span></p>
+<p><span lang="EN-CA"></span></p>
+<h1><span lang="EN-CA"></span>&nbsp;</h1>
+<h1><span lang="EN-CA">Questions &amp; Comments</span></h1>
+<p><strong><span lang="EN-CA"></span></strong></p>
+<p><span lang="EN-CA">If you have questions, comments or concerns 
+with either the way we use the information that is collected from your web 
+browser or our privacy policy, please feel free to contact our firm.</span></p>
+<p><span lang="EN-CA"></span>&nbsp;</p><img src='include/navassist.php?sid=240&nid=410839&a=20&u=&adm=0&o=privacy' style='position:absolute;top:0px;left:0px'><center><a href='https://irvinefuneral.frontrunnerpro.com/' target='_new' style='text-decoration:none'>Admin</a>&nbsp;|&nbsp;<a href='runtime.php?NavigatorId=410839&SiteId=240&op=privacy' style='text-decoration:none'>Privacy Policy</a>&nbsp;|&nbsp;<a href='runtime.php?SiteId=240&NavigatorId=37320' style='text-decoration:none'>Site Map</a>&nbsp;|&nbsp;Matthews IMS 4.0 | Powered by <a href='http://www.frontrunnerprofessional.com/' target='_new' style='text-decoration:none'>FrontRunner</a><a href='include/sitelist/sitelist.php'><img src='include/clearpixel.gif' width='1' height='1' border='0' align='absmiddle'></a></center>
+<!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+<script type="text/javascript" language="JavaScript">var site="s22irvinefh"</script>
+<script type="text/javascript" language="JavaScript1.2" src="http://s22.sitemeter.com/js/counter.js?site=s22irvinefh">
+</script>
+<noscript>
+<a href="http://s22.sitemeter.com/stats.asp?site=s22irvinefh" target="_top">
+<img src="http://s22.sitemeter.com/meter.asp?site=s22irvinefh" alt="Site Meter" border="0"/></a>
+</noscript>
+<!-- Copyright (c)2005 Site Meter -->
+<!--WEBBOT bot="HTMLMarkup" Endspan -->
+
+
+
+</body>
+
+</html>

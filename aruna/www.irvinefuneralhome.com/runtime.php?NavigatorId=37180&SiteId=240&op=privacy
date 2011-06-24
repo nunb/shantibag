@@ -1,0 +1,502 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+<title>Privacy Policy</title>
+<script>t=new Date();tomorrow=new Date(t.getYear(), t.getMonth(), t.getDate()+1);document.write("<meta http-equiv='Expires' content='" + tomorrow.toGMTString() + "'>");</script>
+
+		<script>
+		function insertDate()
+		{
+			var today,i,ar,ampm;
+			today = new Date();
+			ar=Array('January','February','March','April','May','June','July','August','September','October','November','December');
+			document.write(' ' + ar[today.getMonth()]);
+			document.write(' ' + today.getDate());
+			if ((navigator.appName=='Netscape')&&(parseFloat(navigator.appVersion)<=4.01))
+			{
+				i=today.getYear();
+					if ((i>=0)&&(i<=99))
+					{
+						if (i<=9) i='190'+i;
+						else i='19'+i;
+					}
+			}
+			else
+			{
+				i=today.getFullYear();
+			}
+			document.write(', ' + i);
+		}
+		</script>
+		
+		<style type='text/css'>
+		<!--
+
+		body { margin-right:0px; margin-left:0px; margin-top:0px; margin-bottom:0px; }
+
+		A.b { text-decoration:none; }
+		A.b:link, A.b:visited, A.b:active { color: #FFFFFF; }
+		A.b:hover { color: #FF0000; }
+
+		A.bsel { text-decoration:none; }
+		A.bsel:link, A.bsel:visited, A.bsel:active { color: #FF0000; }
+		A.bsel:hover { color: #FF0000; }
+		
+		-->
+</style>
+
+
+		<script>
+		function insertDate()
+		{
+			var today,i,ar,ampm;
+			today = new Date();
+			ar=Array('January','February','March','April','May','June','July','August','September','October','November','December');
+			document.write(' ' + ar[today.getMonth()]);
+			document.write(' ' + today.getDate());
+			if ((navigator.appName=='Netscape')&&(parseFloat(navigator.appVersion)<=4.01))
+			{
+				i=today.getYear();
+					if ((i>=0)&&(i<=99))
+					{
+						if (i<=9) i='190'+i;
+						else i='19'+i;
+					}
+			}
+			else
+			{
+				i=today.getFullYear();
+			}
+			document.write(', ' + i);
+		}
+		</script>
+		
+		<style type='text/css'>
+		<!--
+			.clCMEvent{position:absolute; width:99%; height:99%; clip:rect(0,100%,100%,0); left:0; top:0; visibility:visible}
+			.clCMAbs{position:absolute; visibility:hidden; left:0; top:0}
+		-->
+		</style>
+
+		<script language="JavaScript1.2" src="include/coolmenus4.js">
+		/*
+			Copyright (c) 2001 Thomas Brattli (webmaster@dhtmlcentral.com)
+
+			DHTML coolMenus - Get it at coolmenus.dhtmlcentral.com
+			Version 4.0_beta
+			This script can be used freely as long as all copyright messages are
+			intact.
+		*/
+		</script>
+		<script language="JavaScript1.2" src="include/cm_addins.js">
+		/*
+			Copyright (c) 2001 Thomas Brattli (webmaster@dhtmlcentral.com)
+			Coolmenus add-in file for more advanced featuers..
+		*/
+		</script>
+
+		<script Language="Javascript">
+			//Extra code to find position:
+
+/*
+			function findPos(objname)
+			{
+					//alert(objname)
+					if(bw.ns4)
+					{   //Netscape 4
+						x = document.layers[objname].pageX
+						y = document.layers[objname].pageY
+					}
+					else
+					{ //other browsers
+						s = "";
+					
+						x=0; y=0; 
+						var el,temp
+						el = bw.ie4?document.all[objname]:document.getElementById(objname);
+						
+						if (bw.moz)
+						{
+							if (el.firstChild)
+							{
+								if (el.firstChild.tagName=="IMG")
+								{
+									el = el.firstChild;
+								}
+							}		
+						}
+						
+						
+						if(el.offsetParent)
+						{
+							temp = el
+	
+							while(temp.offsetParent)
+							{ //Looping parent elements to get the offset of them as well
+								temp=temp.offsetParent;
+								x+=temp.offsetLeft
+								y+=temp.offsetTop;
+							}
+						}
+						
+						x+=el.offsetLeft
+						y+=el.offsetTop
+					}
+					
+					return [x,y]
+			}		
+*/
+
+
+// find left X coordinate of a DOM object (Quirksmode solution, but modified to fix for Safari)
+findPosX = function(DOMobj)
+{               
+        var curleft = 0;
+        if(DOMobj.offsetParent)
+        {
+                while(1)
+                {
+                        curleft += DOMobj.offsetLeft;
+                        if(!DOMobj.offsetParent) break;                        DOMobj = DOMobj.offsetParent;
+                }
+        }
+        else if(DOMobj.x)
+        {       
+                curleft += DOMobj.x;        }
+        return curleft;
+}
+
+
+// find top Y coordinate of a DOM object (Quirksmode solution, but modified to fix for Safari)
+findPosY = function(DOMobj)
+{
+        var curtop = 0;
+        if(DOMobj.offsetParent)
+        {
+                while(1)
+                {
+                        curtop += DOMobj.offsetTop;
+                        if(!DOMobj.offsetParent) break;
+                        DOMobj = DOMobj.offsetParent;
+                }
+        }
+        else if(obj.y)
+        {
+                curtop += DOMobj.y;
+        }
+        return curtop;
+}
+
+function findPos(objname)
+{
+        var objTest = document.getElementById(objname);
+
+        return [findPosX(objTest),findPosY(objTest)];
+}
+
+</script>
+
+
+			<style type='text/css'>
+			<!--
+				.flyLevel0,.flyLevel0over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel0{background-color:#191717; layer-background-color:#191717; color:#ffffff;}
+				.flyLevel0over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel0border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+	
+				.flyLevel1,.flyLevel1over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel1{background-color:#7e7e7e; layer-background-color:#7e7e7e; color:#ffffff;}
+				.flyLevel1over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel1border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+	
+				.flyLevel2,.flyLevel2over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel2{background-color:#7e7e7e; layer-background-color:#7e7e7e; color:#ffffff;}
+				.flyLevel2over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel2border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+			-->
+			</style>
+			
+<link rel="stylesheet" type="text/css" href="reset.css" />
+<link rel="stylesheet" type="text/css" href="core.css" />
+<script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2"></script>
+<script type="text/javascript" src="adv_tunnel.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.2.72.js"></script>
+
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="ie6.css" />
+<script type="text/javascript" src="dd_belated_pngfix.js"></script>
+<script type="text/javascript" src="ie6.js"></script>
+<![endif]-->
+</head>
+
+<body id='frp_siteid_240' class='frp_navigator_37180 frp_section_has-a-death-occurred frp_template_mp-v1 frp_branch_1' topmargin='0' leftmargin='0' marginheight='0' marginwidth='0'  bgcolor='#191717' link='#FF0000' text='#000000'>
+
+
+<div id="bggradient"></div>    <div id="sitewrapper">      <div id="pagewrapper">        <div id="header">        <div id="logo">      <a href="home.html"><span>Irvine Memorial</span></a>        </div>                <div id="deathnotices">      <INPUT name='CondolenceSearch' id='CondolenceSearch' style='font-family:Arial; font-size:8pt; width:120px; border-style:border-collapse; border-color:#000000; border-width:1px;'><A HREF='javascript:doCondolences()' style='text-decoration:none;'><img src="condolencesearch-btn.gif"></A><SCRIPT Language='Javascript'>function doCondolences() { var s = document.getElementById('CondolenceSearch').value; if (s) window.location="./runtime.php?SiteId=240&NavigatorId=37306&Keywords="+s; return; } </SCRIPT>        </div>            </div> <!--header-->        <div id="date"><script language='Javascript'>insertDate();</script></div>        <div id="column1">                <div id="quicksearch">      <p>Quick Search</p>      <input type='text' id='Search' value='Search keyword(s)' onclick='if (this.value=="Search keyword(s)") this.value=""' onkeypress='if (event.keyCode == 13) searchClick(); else return true;' style='font-family:Arial; font-size:8pt; width:115px; border-style:border-collapse; border-color:#000000; border-width:1px;'><a href='javascript:searchClick()' style='text-decoration:none'><img src="go-btn.gif" align="absmiddle"></A><script language='Javascript'>function searchClick(){var s=document.getElementById('Search').value; if(s){window.location='runtime.php?SiteId=240&NavigatorId=37320&op=search&Search='+s; return;}}</script>        </div>                <div id="navigation">      <img id="FlyMenu0" src="include/cm_fill.gif" width="166" height="211" alt="" border="0">        </div>    </div> <!--#column1-->    <div id="column2">                <div id="bodywrapper">      
+
+<p><span lang="EN-CA"></span></p>
+<h2><span lang="EN-CA"></span>&nbsp;</h2>
+<h2><span lang="EN-CA">Irvine Memorial Privacy Policy</span></h2>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<p><span lang="EN-CA">At, Irvine Memorial, we understand that the 
+privacy of our visitors and the knowledge of our use of information collected 
+from each visitor is important in our activities. Please feel free to read our 
+privacy policy and we encourage you to contact our firm about any of the 
+information located below if you need further assistance.</span></p>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<p><span lang="EN-CA">Contact Information:<br /></span></p>
+<p><span lang="EN-CA">If you feel that there is a need to contact 
+our firm, please use one of the following methods:</span></p>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<p><span lang="EN-CA"><u>Mail</u>:</span></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">Irvine Memorial</span><span lang="EN-CA">4 James Street East<br><br>Brockville, ON, CA<BR>K6V1J9</span><span lang="EN-CA">K6V1J9</span></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA"><u>Phone</u>:<br /></span></p>
+<p><span lang="EN-CA">613-342-2828</span></p>
+<p><span lang="EN-CA"><u>Email 
+Address</u>:<br /><br />irvinefh@gmail.com</span><span lang="EN-CA">&nbsp;</span></p>
+<p><strong><span lang="EN-CA"></span></strong>&nbsp;</p>
+<p><strong><span lang="EN-CA">Your IP 
+address:</span></strong></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">We collect the IP Address and Domain Name 
+that is used when surfing our web site. We use this information for Site Traffic 
+Statistics and analysis and only retain our last 60 visitors. We also receive 
+your IP Address when you complete a search on our site inorder to help our firm 
+better recognize what is being searched by our visitors. All IP Addresses and 
+Domain Names are kept with the upmost confidentiality.</span></p>
+<p><span lang="EN-CA">&nbsp;</span></p>
+<h1><span lang="EN-CA">Use of Cookies</span></h1>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">A cookie is used by SiteMajic only when 
+there is persistent data that is required to use the Web Site, ie. 
+Administration Mode, and when an E-Commerce order form is being completed. For 
+general viewing of pages, there are no use of cookies.</span></p>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">When a user is wishing to purchase the 
+product(s) that they have chosen they will be asked to complete a online form. 
+When a user completes a section of the form and clicks on the �Next� button, not 
+only does the form progress to the Next page but a cookie is created on the 
+visitors computer with the information that they just completed. The purpose of 
+the shopping basket cookie is to remember your information so that if you leave 
+or get disconnected and come back to the order form our server will be able to 
+complete the sections of the order form for you including product 
+selected.</span></p>
+<p><span lang="EN-CA"></span></p>
+<h1><span lang="EN-CA"></span>&nbsp;</h1>
+<h1><span lang="EN-CA">Security Monitoring</span></h1>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">All login attempts to Administration Mode 
+will be monitored by ittWeb.com. Each failed attempt is written back to the 
+server and analyzed by the staff of ittWeb.com. If a user attempts to login to 
+any SiteMajic site and fails 10 times, the user is �locked out� and will need to 
+contact ittWeb.com for further direction.</span></p>
+<p><span lang="EN-CA"></span></p>
+<h1><span lang="EN-CA"></span>&nbsp;</h1>
+<h1><span lang="EN-CA">E-Commerce Module</span></h1>
+<p><span lang="EN-CA"></span></p>
+<p><span lang="EN-CA">Our E-Commerce Module incorporates the SSL 
+technology provided by InternetSecure, a third party transaction company. When 
+you are completing the ordering process the final step will take you from 
+Irvine Memorial web site to InternetSecure 128-bit encrypted page. There your 
+credit card information will be taken an the order will either be approved or 
+declined. If your order is approved, Irvine Memorial receives only a confirmation 
+number that your order was approved and a list of the items that has been 
+ordered. The credit card information is not recorded either through Irvine Memorial 
+or InternetSecure. If you have any questions please feel free to ask <a href="mailto:accounting@ittweb.com">accounting@ittweb.com</a>.</span></p>
+<p><span lang="EN-CA"></span></p>
+<h1><span lang="EN-CA"></span>&nbsp;</h1>
+<h1><span lang="EN-CA">Questions &amp; Comments</span></h1>
+<p><strong><span lang="EN-CA"></span></strong></p>
+<p><span lang="EN-CA">If you have questions, comments or concerns 
+with either the way we use the information that is collected from your web 
+browser or our privacy policy, please feel free to contact our firm.</span></p>
+<p><span lang="EN-CA"></span>&nbsp;</p><img src='include/navassist.php?sid=240&nid=37180&a=20&u=&adm=0&o=privacy' style='position:absolute;top:0px;left:0px'>        </div> <!--#bodywrapper-->    </div> <!--#column2-->            <div id="clear"></div>    <div class="clear"></div>      </div> <!-- #pagewrapper -->            <div id="footer">    <p>4 James St.| Brockville, Ontario K6V 1J9 | Phone: (613) 342-2828<br/>    2451 County Rd. 15 P.O. Box 44 | Maitland, Ontario K0E 1P0 | Phone: (613) 348-3405<br/>    <center><a href='https://irvinefuneral.frontrunnerpro.com/' target='_new' style='text-decoration:none'>Admin</a>&nbsp;|&nbsp;<a href='runtime.php?NavigatorId=37180&SiteId=240&op=privacy' style='text-decoration:none'>Privacy Policy</a>&nbsp;|&nbsp;<a href='runtime.php?SiteId=240&NavigatorId=37320' style='text-decoration:none'>Site Map</a>&nbsp;|&nbsp;Matthews IMS 4.0 | Powered by <a href='http://www.frontrunnerprofessional.com/' target='_new' style='text-decoration:none'>FrontRunner</a><a href='include/sitelist/sitelist.php'><img src='include/clearpixel.gif' width='1' height='1' border='0' align='absmiddle'></a></center></p>      </div> <!-- #footer -->  </div> <!--#sitewrapper -->
+
+			<SCRIPT LANGUAGE='Javascript'>
+
+			var flyMenu = new makeCM("flyMenu")
+			flyMenu.pxBetween=0
+
+			flyMenu.menuPlacement=1
+			flyMenu.offlineRoot=""
+			flyMenu.onlineRoot=""
+			flyMenu.resizeCheck=1
+			flyMenu.wait=1000
+			flyMenu.fillImg="include/cm_fill.gif"
+			flyMenu.zIndex=-1
+			flyMenu.useBar=0
+		 	flyMenu.fromLeft=0;
+		 	flyMenu.fromTop=0;
+
+			flyMenu.level[0]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[0].width=166-(0*2);
+			flyMenu.level[0].height=20
+			flyMenu.level[0].regClass="flyLevel0"
+			flyMenu.level[0].overClass="flyLevel0over"
+			flyMenu.level[0].borderX=0
+			flyMenu.level[0].borderY=1
+			flyMenu.level[0].borderClass="flyLevel0border"
+			flyMenu.level[0].offsetX=0
+			flyMenu.level[0].offsetY=-1
+			flyMenu.level[0].align="right"
+			flyMenu.level[0].arrow="include/menu_arrow.png"
+			flyMenu.level[0].arrowWidth=10
+			flyMenu.level[0].arrowHeight=9
+			//flyMenu.level[0].arrow=0
+			//flyMenu.level[0].arrowWidth=0
+			//flyMenu.level[0].arrowHeight=0
+
+
+			flyMenu.level[1]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[1].offsetX=-1
+			flyMenu.level[1].regClass="flyLevel1"
+			flyMenu.level[1].overClass="flyLevel1over"
+			flyMenu.level[1].borderX=1
+			flyMenu.level[1].borderY=1
+			flyMenu.level[1].borderClass="flyLevel1border"
+
+			flyMenu.level[2]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[2].regClass="flyLevel2"
+			flyMenu.level[2].overClass="flyLevel2over"
+			flyMenu.level[2].borderClass="flyLevel2border"
+
+			flyMenu.level[3]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[3].regClass="flyLevel0"
+			flyMenu.level[3].overClass="flyLevel0over"
+			flyMenu.level[3].borderClass="flyLevel1border"
+flyMenu.makeMenu('37171','0','&nbsp;&nbsp;Home','./home.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37172','0','&nbsp;&nbsp;About Us','./about_us.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37173','37172','&nbsp;Our Heritage','./our_heritage.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37174','37172','&nbsp;Samuel Flint House','./whats_new.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37175','37172','&nbsp;Affiliations','./Affliliations_-16110.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37177','0','&nbsp;&nbsp;Has a Death Occurred','./death_occurred.html','','', '', '', '', 'flyLevel0over', 'flyLevel0over')
+flyMenu.makeMenu('37180','37177','&nbsp;Has a Death Occurred','./has_death_occurred.html','','', '', '', '', 'flyLevel0over', 'flyLevel0over')
+flyMenu.makeMenu('37178','37177','&nbsp;Were Pre-Arrangements Made?','./pre_arranged.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37179','37177','&nbsp;Who Else Should Be Contacted','./other_contacts.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37190','0','&nbsp;&nbsp;Locations','./our_facilities.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37191','37190','&nbsp;Irvine Funeral Home Brockville','./irvine_fh_brockville.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37176','37191','&nbsp;Finding Us','./Finding_Us_37176.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37192','37190','&nbsp;Irvine Memorial Chapel Maitland','./Irvine_mc_maitland.html','','', '', '', '', '', '')
+flyMenu.makeMenu('336508','37192','&nbsp;Finding Us','./Finding_Us_336508.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37193','37190','&nbsp;Roselawn Memorial Gardens','./Roselawn_Memorial_Gardens.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37194','37190','&nbsp;Roselawn Crematorium','./crematorium.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37181','0','&nbsp;&nbsp;Our Services','./our_services.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37182','37181','&nbsp;Funeral Expenses','./service_charges.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37189','37181','&nbsp;Estate Benefits Service','./Coming_Events_-16114.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37184','37181','&nbsp;Catering Services','./Catering_Services_37184.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37339','37181','&nbsp;Video Tributes','./Video_Tributes_37339.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37186','0','&nbsp;&nbsp;Client Care','./Client_Care_-57507.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37187','37186','&nbsp;Feedback Form','./Feedback_Form.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37188','37186','&nbsp;Ask the Director','./Ask_the_Director_-4034.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37196','0','&nbsp;&nbsp;Personal Selections','./our_products.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37197','37196','&nbsp;Caskets','javascript:void(0)','','', '', '', '', '', '')
+flyMenu.makeMenu('37198','37197','&nbsp;Casket Selection','./Cremation_Containers_-14576.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37201','37197','&nbsp;Wooden Caskets','./Wooden_Caskets_37201.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37202','37197','&nbsp;Metal Caskets','./Metal_Caskets_37202.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37205','37197','&nbsp;Rental Caskets','./Rental_Caskets_37205.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37199','37197','&nbsp;Cremation Containers','./Cremation_Containers_37199.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37206','37196','&nbsp;Burial Vaults','./Burial_Vaults_-57372.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37214','37196','&nbsp;Cremation Urns','./Cremation_Urns_-57380.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37226','37196','&nbsp;Cremation Vaults','./Cremation_Vaults_-57392.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37233','37196','&nbsp;Memorial Stationery','./Memorial_Stationery_-16137.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37241','0','&nbsp;&nbsp;Pre-Arrangement','./prearrangement_issues.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37242','37241','&nbsp;Pre-Payment Options','./prepayment_options.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37243','37241','&nbsp;Pre-Planning Options','./pre_planning.html','','', '', '', '', '', '')
+flyMenu.makeMenu('225966','37241','&nbsp;Pre-Arrange Online','./Pre-Arrange_Online_225966.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37244','37241','&nbsp;Frequently Asked','./Frequently_Asked_-16127.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37170','37241','&nbsp;Funeral Plans Canada','./Funeral_Plans_Canada_37170.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37252','0','&nbsp;&nbsp;Resource Center','./Resource_Center_-12636.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37253','37252','&nbsp;Community Links','./Community_Links_-57415.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37254','37253','&nbsp;Accommodations','./Local_Accommodations_-16172.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37256','37253','&nbsp;Flower Shops','./Flower_Shops_-16174.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37257','37253','&nbsp;Local Churches','./Local_Churches_-16175.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37265','37253','&nbsp;Cemeteries','./Cemeteries_37265.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37266','37253','&nbsp;Newspapers','./Newspapers_37266.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37267','37253','&nbsp;Monument Companies','./Local_Monument_Companies_-16261.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37268','37252','&nbsp;Helpful Guidance','./Helpful_Guidance_-57430.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37269','37268','&nbsp;Someone you Love is Dying','./When_Someone_you_Love_is_Dying_-14477.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37270','37268','&nbsp;How do I know...','./-14488.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37271','37268','&nbsp;Organ & Tissue Donations','./FAQs_about_Organ_and_Tissue_Donations_-14569.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37272','37268','&nbsp;Who to Call First?','./Who_to_call_-14574.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37273','37268','&nbsp;Family Emergency','./-14538.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37274','37268','&nbsp;Choosing Clothing','./Choosing_Clothing_37274.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37275','37268','&nbsp;Writing an Obituary','./Writing_an_Obituary_37275.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37276','37268','&nbsp;Funeral Etiquette','./Funeral_Etiquette_37276.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37277','37268','&nbsp;Eulogy\'s','./Eulogys_37277.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37278','37252','&nbsp;Funeral Issues','./Funeral_Issues_-16165.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37279','37278','&nbsp;Embalming','./Embalming_37279.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37280','37278','&nbsp;Burial','./Burial_37280.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37281','37278','&nbsp;Cremation','./Cremation_-14562.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37282','37278','&nbsp;Visitation','./Visitation_37282.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37283','37278','&nbsp;Memorial Services','./Memorial_Services_37283.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37284','37278','&nbsp;Meaningful Services','./Meaningful_Services_37284.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37285','37252','&nbsp;Grief Issues','./Grief_Issues_-57447.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37286','37285','&nbsp;Helping Yourself Heal','./-14489.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37287','37285','&nbsp;Accepting a Loss','./-14490.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37288','37285','&nbsp;Grief','./Grief_Issues_-12651.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37289','37285','&nbsp;The Grieving Process','./-14491.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37290','37285','&nbsp;When Your Parent Dies','./-14492.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37291','37285','&nbsp;Children\'s Corner','./Childerns_Corner_37291.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37292','37252','&nbsp;Legal Issues','./Legal_Issues_-57454.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37293','37292','&nbsp;Do I need a Lawyer?','./-14509.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37294','37292','&nbsp;Estate Settlement Issues','./-14521.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37295','37292','&nbsp;Important Documents','./-14522.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37296','37292','&nbsp;Death Certificates','./-14524.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37297','37292','&nbsp;Accounts & Deposit Boxes','./-14525.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37298','37292','&nbsp;Executors','./Executors_-14572.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37299','37292','&nbsp;Administration of a Will','./-14526.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37300','37292','&nbsp;Questions About Wills','./Frequently_Asked_Questions_about_Wills_-14566.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37301','37292','&nbsp;Probate','./-14510.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37302','37292','&nbsp;Notify Creditors','./-14528.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37303','37252','&nbsp;Other Interests','./Interesting_Links_-16171.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37304','37303','&nbsp;Newspaper Guidelines','./Newspaper_Guidelines_-12638.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37338','37252','&nbsp;Grief Words By Dr. Alan Wolfelt','./Grief_Words_By_Dr._Alan_Wolfelt_37338.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37314','0','&nbsp;&nbsp;Contact Us','./contact_us.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37315','37314','&nbsp;Contact Information','./Contact_Information_-16115.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37316','37314','&nbsp;Ask The Director','./Ask_The_Director_-16116.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37317','37314','&nbsp;Employment Opportunities','./Employment_Opportunities_37317.html','','', '', '', '', '', '')
+			function placeFlyMenuElements()
+			{
+			  	pos = findPos('FlyMenu0')
+			 	flyMenu.fromTop = pos[1];
+			 	flyMenu.fromLeft = pos[0];
+				flyMenu.construct(1);	
+			}
+
+
+			flyMenu.construct();
+			placeFlyMenuElements();
+		
+
+			flyMenu.onresize="placeFlyMenuElements();"
+			//flyMenu.onafterresize
+			//window.onresize+=";setTimeout(1000,'placeFlyMenuElements()');";
+			
+			//placeFlyMenuElements()
+
+						//placeFlyMenuElements();
+			var oldOnload = window.onload;
+			window.onload = function(){
+				if(oldOnload){ oldOnload(); }
+				placeFlyMenuElements();
+			}
+</script>
+<!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+<script type="text/javascript" language="JavaScript">var site="s22irvinefh"</script>
+<script type="text/javascript" language="JavaScript1.2" src="http://s22.sitemeter.com/js/counter.js?site=s22irvinefh">
+</script>
+<noscript>
+<a href="http://s22.sitemeter.com/stats.asp?site=s22irvinefh" target="_top">
+<img src="http://s22.sitemeter.com/meter.asp?site=s22irvinefh" alt="Site Meter" border="0"/></a>
+</noscript>
+<!-- Copyright (c)2005 Site Meter -->
+<!--WEBBOT bot="HTMLMarkup" Endspan -->
+
+
+
+</body>
+
+</html>
