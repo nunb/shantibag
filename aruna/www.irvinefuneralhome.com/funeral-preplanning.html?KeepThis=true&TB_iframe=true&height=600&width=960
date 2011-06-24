@@ -1,0 +1,221 @@
+<html><head>
+
+<title>Funeral Pre Planning</title>
+<script>t=new Date();tomorrow=new Date(t.getYear(), t.getMonth(), t.getDate()+1);document.write("<meta http-equiv='Expires' content='" + tomorrow.toGMTString() + "'>");</script>
+
+		<script>
+		function insertDate()
+		{
+			var today,i,ar,ampm;
+			today = new Date();
+			ar=Array('January','February','March','April','May','June','July','August','September','October','November','December');
+			document.write(' ' + ar[today.getMonth()]);
+			document.write(' ' + today.getDate());
+			if ((navigator.appName=='Netscape')&&(parseFloat(navigator.appVersion)<=4.01))
+			{
+				i=today.getYear();
+					if ((i>=0)&&(i<=99))
+					{
+						if (i<=9) i='190'+i;
+						else i='19'+i;
+					}
+			}
+			else
+			{
+				i=today.getFullYear();
+			}
+			document.write(', ' + i);
+		}
+		</script>
+		
+		<style type='text/css'>
+		<!--
+
+		body { margin-right:0px; margin-left:0px; margin-top:0px; margin-bottom:0px; }
+
+		A.b { text-decoration:none; }
+		A.b:link, A.b:visited, A.b:active { color: white; }
+		A.b:hover { color: red; }
+
+		A.bsel { text-decoration:none; }
+		A.bsel:link, A.bsel:visited, A.bsel:active { color: red; }
+		A.bsel:hover { color: red; }
+		
+		-->
+</style>
+
+
+		<style type='text/css'>
+		<!--
+			.clCMEvent{position:absolute; width:99%; height:99%; clip:rect(0,100%,100%,0); left:0; top:0; visibility:visible}
+			.clCMAbs{position:absolute; visibility:hidden; left:0; top:0}
+		-->
+		</style>
+
+		<script language="JavaScript1.2" src="include/coolmenus4.js">
+		/*
+			Copyright (c) 2001 Thomas Brattli (webmaster@dhtmlcentral.com)
+
+			DHTML coolMenus - Get it at coolmenus.dhtmlcentral.com
+			Version 4.0_beta
+			This script can be used freely as long as all copyright messages are
+			intact.
+		*/
+		</script>
+		<script language="JavaScript1.2" src="include/cm_addins.js">
+		/*
+			Copyright (c) 2001 Thomas Brattli (webmaster@dhtmlcentral.com)
+			Coolmenus add-in file for more advanced featuers..
+		*/
+		</script>
+
+		<script Language="Javascript">
+			//Extra code to find position:
+
+/*
+			function findPos(objname)
+			{
+					//alert(objname)
+					if(bw.ns4)
+					{   //Netscape 4
+						x = document.layers[objname].pageX
+						y = document.layers[objname].pageY
+					}
+					else
+					{ //other browsers
+						s = "";
+					
+						x=0; y=0; 
+						var el,temp
+						el = bw.ie4?document.all[objname]:document.getElementById(objname);
+						
+						if (bw.moz)
+						{
+							if (el.firstChild)
+							{
+								if (el.firstChild.tagName=="IMG")
+								{
+									el = el.firstChild;
+								}
+							}		
+						}
+						
+						
+						if(el.offsetParent)
+						{
+							temp = el
+	
+							while(temp.offsetParent)
+							{ //Looping parent elements to get the offset of them as well
+								temp=temp.offsetParent;
+								x+=temp.offsetLeft
+								y+=temp.offsetTop;
+							}
+						}
+						
+						x+=el.offsetLeft
+						y+=el.offsetTop
+					}
+					
+					return [x,y]
+			}		
+*/
+
+
+// find left X coordinate of a DOM object (Quirksmode solution, but modified to fix for Safari)
+findPosX = function(DOMobj)
+{               
+        var curleft = 0;
+        if(DOMobj.offsetParent)
+        {
+                while(1)
+                {
+                        curleft += DOMobj.offsetLeft;
+                        if(!DOMobj.offsetParent) break;                        DOMobj = DOMobj.offsetParent;
+                }
+        }
+        else if(DOMobj.x)
+        {       
+                curleft += DOMobj.x;        }
+        return curleft;
+}
+
+
+// find top Y coordinate of a DOM object (Quirksmode solution, but modified to fix for Safari)
+findPosY = function(DOMobj)
+{
+        var curtop = 0;
+        if(DOMobj.offsetParent)
+        {
+                while(1)
+                {
+                        curtop += DOMobj.offsetTop;
+                        if(!DOMobj.offsetParent) break;
+                        DOMobj = DOMobj.offsetParent;
+                }
+        }
+        else if(obj.y)
+        {
+                curtop += DOMobj.y;
+        }
+        return curtop;
+}
+
+function findPos(objname)
+{
+        var objTest = document.getElementById(objname);
+
+        return [findPosX(objTest),findPosY(objTest)];
+}
+
+</script>
+
+
+			<style type='text/css'>
+			<!--
+				.flyLevel0,.flyLevel0over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel0{background-color:#191717; layer-background-color:#191717; color:#ffffff;}
+				.flyLevel0over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel0border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+	
+				.flyLevel1,.flyLevel1over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel1{background-color:#7e7e7e; layer-background-color:#7e7e7e; color:#ffffff;}
+				.flyLevel1over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel1border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+	
+				.flyLevel2,.flyLevel2over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel2{background-color:#7e7e7e; layer-background-color:#7e7e7e; color:#ffffff;}
+				.flyLevel2over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel2border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+			-->
+			</style>
+			
+
+
+</head>
+
+<body id='frp_siteid_240' class='frp_navigator_410839 frp_section_home frp_template_funeral-preplanning frp_branch_1' topmargin='0' leftmargin='0' marginheight='0' marginwidth='0'  bgcolor='#FFFFFF'>
+
+
+<style type="text/css">    #TB_title {background-color: #000000 !important; color: #FFFFFF !important;}</style><div style="height: 65px; background: #283a20 url(popup-header-bg.png) 50% 50% no-repeat;"></div><iframe src="http://www.thefuneralplanningsite.ca/are-you-prepared/step-1-a-new-reality/" style="width: 985px; height: 543px;"><table border="0" cellpadding="0" cellspacing="0" width="100%" height=100%>
+  <tr>
+    <td align=center valign=middle>
+    <img border="0" src="include/HTML/under_construction/FRP_Under_Construction.gif" width="320" height="143"></td>
+  </tr>
+</table><img src='include/navassist.php?sid=240&nid=410839&a=20&u=irvine&adm=0&o=publish' style='position:absolute;top:0px;left:0px'><center><a href='https://irvinefuneral.frontrunnerpro.com/' target='_new' style='text-decoration:none'>Admin</a>&nbsp;|&nbsp;<a href='runtime.php?NavigatorId=410839&SiteId=240&op=privacy' style='text-decoration:none'>Privacy Policy</a>&nbsp;|&nbsp;<a href='runtime.php?SiteId=240&NavigatorId=37320' style='text-decoration:none'>Site Map</a>&nbsp;|&nbsp;Matthews IMS 4.0 | Powered by <a href='http://www.frontrunnerprofessional.com/' target='_new' style='text-decoration:none'>FrontRunner</a><a href='include/sitelist/sitelist.php'><img src='include/clearpixel.gif' width='1' height='1' border='0' align='absmiddle'></a></center>
+<!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+<script type="text/javascript" language="JavaScript">var site="s22irvinefh"</script>
+<script type="text/javascript" language="JavaScript1.2" src="http://s22.sitemeter.com/js/counter.js?site=s22irvinefh">
+</script>
+<noscript>
+<a href="http://s22.sitemeter.com/stats.asp?site=s22irvinefh" target="_top">
+<img src="http://s22.sitemeter.com/meter.asp?site=s22irvinefh" alt="Site Meter" border="0"/></a>
+</noscript>
+<!-- Copyright (c)2005 Site Meter -->
+<!--WEBBOT bot="HTMLMarkup" Endspan -->
+
+
+
+</body>
+
+</html>

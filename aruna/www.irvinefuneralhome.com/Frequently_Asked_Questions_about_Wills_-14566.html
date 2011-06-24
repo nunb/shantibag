@@ -1,0 +1,527 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+<title>Questions About Wills</title>
+<script>t=new Date();tomorrow=new Date(t.getYear(), t.getMonth(), t.getDate()+1);document.write("<meta http-equiv='Expires' content='" + tomorrow.toGMTString() + "'>");</script>
+
+		<script>
+		function insertDate()
+		{
+			var today,i,ar,ampm;
+			today = new Date();
+			ar=Array('January','February','March','April','May','June','July','August','September','October','November','December');
+			document.write(' ' + ar[today.getMonth()]);
+			document.write(' ' + today.getDate());
+			if ((navigator.appName=='Netscape')&&(parseFloat(navigator.appVersion)<=4.01))
+			{
+				i=today.getYear();
+					if ((i>=0)&&(i<=99))
+					{
+						if (i<=9) i='190'+i;
+						else i='19'+i;
+					}
+			}
+			else
+			{
+				i=today.getFullYear();
+			}
+			document.write(', ' + i);
+		}
+		</script>
+		
+		<style type='text/css'>
+		<!--
+
+		body { margin-right:0px; margin-left:0px; margin-top:0px; margin-bottom:0px; }
+
+		A.b { text-decoration:none; }
+		A.b:link, A.b:visited, A.b:active { color: #FFFFFF; }
+		A.b:hover { color: #FF0000; }
+
+		A.bsel { text-decoration:none; }
+		A.bsel:link, A.bsel:visited, A.bsel:active { color: #FF0000; }
+		A.bsel:hover { color: #FF0000; }
+		
+		-->
+</style>
+
+
+		<script>
+		function insertDate()
+		{
+			var today,i,ar,ampm;
+			today = new Date();
+			ar=Array('January','February','March','April','May','June','July','August','September','October','November','December');
+			document.write(' ' + ar[today.getMonth()]);
+			document.write(' ' + today.getDate());
+			if ((navigator.appName=='Netscape')&&(parseFloat(navigator.appVersion)<=4.01))
+			{
+				i=today.getYear();
+					if ((i>=0)&&(i<=99))
+					{
+						if (i<=9) i='190'+i;
+						else i='19'+i;
+					}
+			}
+			else
+			{
+				i=today.getFullYear();
+			}
+			document.write(', ' + i);
+		}
+		</script>
+		
+		<style type='text/css'>
+		<!--
+			.clCMEvent{position:absolute; width:99%; height:99%; clip:rect(0,100%,100%,0); left:0; top:0; visibility:visible}
+			.clCMAbs{position:absolute; visibility:hidden; left:0; top:0}
+		-->
+		</style>
+
+		<script language="JavaScript1.2" src="include/coolmenus4.js">
+		/*
+			Copyright (c) 2001 Thomas Brattli (webmaster@dhtmlcentral.com)
+
+			DHTML coolMenus - Get it at coolmenus.dhtmlcentral.com
+			Version 4.0_beta
+			This script can be used freely as long as all copyright messages are
+			intact.
+		*/
+		</script>
+		<script language="JavaScript1.2" src="include/cm_addins.js">
+		/*
+			Copyright (c) 2001 Thomas Brattli (webmaster@dhtmlcentral.com)
+			Coolmenus add-in file for more advanced featuers..
+		*/
+		</script>
+
+		<script Language="Javascript">
+			//Extra code to find position:
+
+/*
+			function findPos(objname)
+			{
+					//alert(objname)
+					if(bw.ns4)
+					{   //Netscape 4
+						x = document.layers[objname].pageX
+						y = document.layers[objname].pageY
+					}
+					else
+					{ //other browsers
+						s = "";
+					
+						x=0; y=0; 
+						var el,temp
+						el = bw.ie4?document.all[objname]:document.getElementById(objname);
+						
+						if (bw.moz)
+						{
+							if (el.firstChild)
+							{
+								if (el.firstChild.tagName=="IMG")
+								{
+									el = el.firstChild;
+								}
+							}		
+						}
+						
+						
+						if(el.offsetParent)
+						{
+							temp = el
+	
+							while(temp.offsetParent)
+							{ //Looping parent elements to get the offset of them as well
+								temp=temp.offsetParent;
+								x+=temp.offsetLeft
+								y+=temp.offsetTop;
+							}
+						}
+						
+						x+=el.offsetLeft
+						y+=el.offsetTop
+					}
+					
+					return [x,y]
+			}		
+*/
+
+
+// find left X coordinate of a DOM object (Quirksmode solution, but modified to fix for Safari)
+findPosX = function(DOMobj)
+{               
+        var curleft = 0;
+        if(DOMobj.offsetParent)
+        {
+                while(1)
+                {
+                        curleft += DOMobj.offsetLeft;
+                        if(!DOMobj.offsetParent) break;                        DOMobj = DOMobj.offsetParent;
+                }
+        }
+        else if(DOMobj.x)
+        {       
+                curleft += DOMobj.x;        }
+        return curleft;
+}
+
+
+// find top Y coordinate of a DOM object (Quirksmode solution, but modified to fix for Safari)
+findPosY = function(DOMobj)
+{
+        var curtop = 0;
+        if(DOMobj.offsetParent)
+        {
+                while(1)
+                {
+                        curtop += DOMobj.offsetTop;
+                        if(!DOMobj.offsetParent) break;
+                        DOMobj = DOMobj.offsetParent;
+                }
+        }
+        else if(obj.y)
+        {
+                curtop += DOMobj.y;
+        }
+        return curtop;
+}
+
+function findPos(objname)
+{
+        var objTest = document.getElementById(objname);
+
+        return [findPosX(objTest),findPosY(objTest)];
+}
+
+</script>
+
+
+			<style type='text/css'>
+			<!--
+				.flyLevel0,.flyLevel0over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel0{background-color:#191717; layer-background-color:#191717; color:#ffffff;}
+				.flyLevel0over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel0border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+	
+				.flyLevel1,.flyLevel1over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel1{background-color:#7e7e7e; layer-background-color:#7e7e7e; color:#ffffff;}
+				.flyLevel1over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel1border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+	
+				.flyLevel2,.flyLevel2over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel2{background-color:#7e7e7e; layer-background-color:#7e7e7e; color:#ffffff;}
+				.flyLevel2over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel2border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+			-->
+			</style>
+			
+<link rel="stylesheet" type="text/css" href="reset.css" />
+<link rel="stylesheet" type="text/css" href="core.css" />
+<script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2"></script>
+<script type="text/javascript" src="adv_tunnel.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.2.72.js"></script>
+
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="ie6.css" />
+<script type="text/javascript" src="dd_belated_pngfix.js"></script>
+<script type="text/javascript" src="ie6.js"></script>
+<![endif]-->
+</head>
+
+<body id='frp_siteid_240' class='frp_navigator_37300 frp_section_resource-center frp_template_mp-v1 frp_branch_1' topmargin='0' leftmargin='0' marginheight='0' marginwidth='0'  bgcolor='#191717' link='#FF0000' text='#000000'>
+
+
+<div id="bggradient"></div>    <div id="sitewrapper">      <div id="pagewrapper">        <div id="header">        <div id="logo">      <a href="home.html"><span>Irvine Memorial</span></a>        </div>                <div id="deathnotices">      <INPUT name='CondolenceSearch' id='CondolenceSearch' style='font-family:Arial; font-size:8pt; width:120px; border-style:border-collapse; border-color:#000000; border-width:1px;'><A HREF='javascript:doCondolences()' style='text-decoration:none;'><img src="condolencesearch-btn.gif"></A><SCRIPT Language='Javascript'>function doCondolences() { var s = document.getElementById('CondolenceSearch').value; if (s) window.location="./runtime.php?SiteId=240&NavigatorId=37306&Keywords="+s; return; } </SCRIPT>        </div>            </div> <!--header-->        <div id="date"><script language='Javascript'>insertDate();</script></div>        <div id="column1">                <div id="quicksearch">      <p>Quick Search</p>      <input type='text' id='Search' value='Search keyword(s)' onclick='if (this.value=="Search keyword(s)") this.value=""' onkeypress='if (event.keyCode == 13) searchClick(); else return true;' style='font-family:Arial; font-size:8pt; width:115px; border-style:border-collapse; border-color:#000000; border-width:1px;'><a href='javascript:searchClick()' style='text-decoration:none'><img src="go-btn.gif" align="absmiddle"></A><script language='Javascript'>function searchClick(){var s=document.getElementById('Search').value; if(s){window.location='runtime.php?SiteId=240&NavigatorId=37320&op=search&Search='+s; return;}}</script>        </div>                <div id="navigation">      <img id="FlyMenu0" src="include/cm_fill.gif" width="166" height="211" alt="" border="0">        </div>    </div> <!--#column1-->    <div id="column2">                <div id="bodywrapper">      
+<font face="Arial,Helvetica,Sans Serif" size="2"><strong><font face="Times New Roman,Times,Serif" size="4">
+</font></strong><p align="left"><strong><font face="Times New Roman,Times,Serif" size="4"><font face="arial,helvetica,sans-serif" size="3">Wills</font></font></strong>
+</p><p align="left">Though most&nbsp;people are aware that they need a will, the majority -- 
+about 70% of us -- don't have one. People procrastinate for many reasons, but 
+it's important to know that writing a will doesn't have to be complicated or 
+expensive. And once it's done, you can rest a little easier, knowing that your 
+wishes will be followed after your death.</p></font><table border=0><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>1.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7021'>What is a will?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>2.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7022'>What if I don't have a will?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>3.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7023'>Making your Will</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>4.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7024'>Do I need a lawyer to make my will?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>5.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7025'>What makes a will legal?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>6.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7026'>Do I need to file my will with a court or in public records somewhere?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>7.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7027'>Where should I keep the will?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>8.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7028'>What is the basis for a will to be contested?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>9.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7029'>Children with Special Needs</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>10.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7030'>Choosing a Guardian</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr></table><br>
+<table width='100%'><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7021'>Question</a>&nbsp;#1</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>What is a will?<br />
+</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>A Will is a document that is created to help make your loved ones decision at the time of death. &nbsp;The Will contains important direction as to your wishes for your funeral. &nbsp;It can also contain your direction on dispersing the estate amongst your loved one.<br />
+<br />
+Your Will can also help to name someone to be left in charge of your children if something was to happen to you. &nbsp;This very important when their are enfants or young children involved in the family.<br />
+<br />
+The Will also simplifies the legal process for the lawyer which will result in minimizing the legal costs that your family will encounter.<br />
+<br />
+One of the most important aspects of the Will is that it will prevent Family bitterness. &nbsp;Your Will will help guide your family through all aspects of the Death Process<br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7022'>Question</a>&nbsp;#2</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>What if I don't have a will?<br />
+</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>There is no spacific person responsible for making your funeral arrangements. &nbsp;This can make co-ordination of funeral details very difficult and often leaves hurt feeling if everyone does not agree.<br />
+<br />
+If you die without a Will, you have died in testate. Your property must go through the probate process in order to have the legal title to the property transferred to your heirs at law. Applicable state or provincial statutes define your heirs at law. The law of the state or province where you live controls the distribution of your personal property. <br />
+<br />
+The rules for determining who gets property distributed from an in testate estate have many variations. Subtle differences between the rules can have a material effect on who inherits when there is no Will. <br />
+<br />
+An example of an in testate estate distribution rules, taken from the community property &nbsp;is: <br />
+<br />
+- if married, the spouse gets 100% of the community property, but only one-third or one-half of the separate property left, as children, parents, and any issue of children or parents, can share in the distribution. <br />
+<br />
+- If married (this includes widows and widowers), the property is distributed to relatives in the following order: <br />
+<br />
+1. &nbsp;All to your issue – your children, grandchildren, great grandchildren, &nbsp; etc., if there are any. If none, then <br />
+<br />
+2. &nbsp;All to your parents (equally), or to the surviving parent, if any. If none, then <br />
+<br />
+3. &nbsp;All to the issue of your parents (your brothers and sisters, then your nieces and nephews, etc). If none, then <br />
+<br />
+4. &nbsp;All to your grandparents (equally) or the surviving grandparent, or the issue of your grandparents (your aunts and uncles, then your cousins, etc.). If none, then <br />
+<br />
+5. &nbsp;All to the issue of any predeceased spouse (your step-children). If none, then <br />
+<br />
+6. &nbsp;All to your next of kin. If none, then <br />
+<br />
+7. &nbsp;All to the parents of a predeceased spouse (your mother- and father-in-law), or the issue of the parents of the deceased spouse (your brothers- or sisters-in law). If none of the above exist, then <br />
+<br />
+8. All to the State of California <br />
+<br />
+In addition, in common with many other states, California has many special rules that apply to widow/ers, half-siblings, children born out-of-wedlock, foster and step-children.<br />
+<br />
+<br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7023'>Question</a>&nbsp;#3</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>Making your Will</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>Making a will that will accomplish what you want it to isn't nearly as complicated as many people fear. There are just a few simple rules; follow them and your wishes will be carried out.<br />
+<br />
+Age: To make a will, you must either be at least 18, or an &quot;emancipated&quot; minor.<br />
+Mental State: You must be of &quot;sound mind&quot; to make a valid will. It's not a rigorous requirement. The standard interpretations require that you: <br />
+know what a will is and that you're making one understand the relationship between yourself and those persons who you would normally provide for, such as a spouse or children understand what you own, and be able to decide how to distribute your property.</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7024'>Question</a>&nbsp;#4</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>Do I need a lawyer to make my will?<br />
+</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>Probably not. Making a will rarely involves complicated legal rules, and most people can draft their own will with the aid of a good self-help book or software program. You just need to know what you own, whom you care about, and have a good self-help resource to guide you.<br />
+<br />
+But if you have questions that aren't answered by the resource you're relying on, a lawyer's services are warranted. Even so, you don't have to turn over the whole project; you can simply ask your questions and then finish making your own will.<br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7025'>Question</a>&nbsp;#5</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>What makes a will legal?<br />
+</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>Any adult of sound mind is entitled to make a will. (And if you're reading this article, you're of sound mind.) Beyond that, there are just a few technical requirements:<br />
+<br />
+The will must be typewritten or computer generated (unless it is a valid handwritten will, as discussed above). <br />
+The document must expressly state that it's your will. <br />
+You must date and sign the will. <br />
+The will must be signed by at least two, or in some states, three, witnesses. They must watch you sign the will, though they don't need to read it. Your witnesses must be people who won't inherit anything under the will. <br />
+You don't have to have your will notarized. In many states, though, if you and your witnesses sign an affidavit (sworn statement) before a notary public, you can help simplify the court procedures required to prove the validity of the will after you die.<br />
+<br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7026'>Question</a>&nbsp;#6</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>Do I need to file my will with a court or in public records somewhere?<br />
+</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>No. A will doesn't need to be recorded or filed with any government agency, although it can be in a few states. Just keep your will in a safe, accessible place and be sure the person in charge of winding up your affairs (your executor) knows where it is.<br />
+<br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7027'>Question</a>&nbsp;#7</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>Where should I keep the will?<br />
+</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>Most States in the United States and Provinces in Canada do not have a government department in charge of a general repository for Wills. &nbsp;Most wills are retained either by the law firm who prepared the Will or at the residence of the person who made the Will. <br />
+<br />
+Most law firms that hold the Will will keep the Will in safe keeping free of charge. The Will can be picked up by you at any time or the law firm willl send the Will to you upon receiving a written letter to this effect from you or your executor upon your death. This is a relatively safe procedure. You should verify however, in what manner are the Wills stored, that is, whether the Wills are stored in a Vault or in a filing cabinet at the law firm. Your decision should be governed accordingly. <br />
+<br />
+We at COMPANY_NAME recommend that you do not leave the Will at your residence. Not only is it susceptible to theft, but in the event of a fire, you and your Will are unavailable. This is clearly not what you intend. &nbsp;We also do not recommend that you keep your Will in a safety deposit box, as in some states the safety deposit box is sealed at the time of &nbsp;death. Keep the Will in any other secure place and ensure that your executor is aware of its location.<br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7028'>Question</a>&nbsp;#8</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>What is the basis for a will to be contested?<br />
+</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>Most of the challenges to invalidate Wills are by potential heirs or beneficiaries who got little or nothing. Questions on the validity of a Will must be filed in probate court within a certain number of days after receiving notice of the death or petition to admit the Will to probate. <br />
+<br />
+The typical objections: <br />
+<br />
+1. The will was not properly drawn, signed or witnessed, according to formal requirements <br />
+<br />
+2. The decedent lacked mental capacity at the time the Will was executed <br />
+<br />
+3. There was fraud, force or undue influence; or <br />
+<br />
+4. The will was a forgery. <br />
+<br />
+If the Will is held invalid, the probate court may invalidate all provisions or only the challenged portion. If the entire Will is held invalid, generally the proceeds are distributed under the laws of intestacy of the probating state or province. <br />
+<br />
+Needless to say, if there is even the possibility of a Will contest, an experienced probate lawyer is a must. <br />
+<br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7029'>Question</a>&nbsp;#9</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>Children with Special Needs<br />
+</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>If you have a child with special needs, ensure that you relay this information to your lawyer. You may wish to set aside a sum of money to deal with this issue. This is often addressed in the Will by establishing what is known as a Trust Fund. After the payment of all debts, the Trustee who is appointed under the Will to receive funds will be directed to use a certain amount of money from the Estate for the &quot;special needs&quot; person who is referred to as the Beneficiary. It is very important when a Trust Fund is established under a Will that you receive competent legal advice. The amount of the Trust Fund may be large if the child is to be looked after for an extended period of time. &nbsp;You must be sure that the Trustee, (the person who administers the Trust), is not only trustworthy but not of an age that the Trustee will likely predecease the Beneficiary. The Trust must have a provision for the replacement or addition of other trustees over time, if required.<br />
+<br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7030'>Question</a>&nbsp;#10</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>Choosing a Guardian</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>If you have young children, you should choose a personal guardian -- someone to raise them in the highly unlikely event you can't.<br />
+<br />
+If your children are young, you've probably thought about who would raise them if for some reason you and the other parent couldn't. It's not an easy thing to consider. But you can make some simple arrangements now that will allay some of your fears, knowing that in the highly unlikely event you can't raise your kids, they will be well cared for.<br />
+<br />
+All you need to do is use your will to name the person you want to be the &quot;personal guardian&quot; of your children if one is ever needed. Then, if neither you or the children's other parent can raise them and a court must step in to appoint a guardian, the judge will appoint the person you nominated in your wills (unless, for some reason, it is not in the best interests of your children).<br />
+<br />
+If you don't name a guardian in your will, anyone who is interested can ask for the position. The judge then must decide, without the benefit of your opinion, who will do the best job of raising your kids.<br />
+</font></td></tr><tr><td colspan=2><br></td></tr></table><HR>
+ 
+<A 
+href="./Resource_Center_-12636.html">
+<P align=right><BR> <BR></A><BR><BR>&nbsp;</P><img src='include/navassist.php?sid=240&nid=37300&a=19&u=irvine&adm=0&o=publish' style='position:absolute;top:0px;left:0px'>        </div> <!--#bodywrapper-->    </div> <!--#column2-->            <div id="clear"></div>    <div class="clear"></div>      </div> <!-- #pagewrapper -->            <div id="footer">    <p>4 James St.| Brockville, Ontario K6V 1J9 | Phone: (613) 342-2828<br/>    2451 County Rd. 15 P.O. Box 44 | Maitland, Ontario K0E 1P0 | Phone: (613) 348-3405<br/>    <center><a href='https://irvinefuneral.frontrunnerpro.com/' target='_new' style='text-decoration:none'>Admin</a>&nbsp;|&nbsp;<a href='runtime.php?NavigatorId=37300&SiteId=240&op=privacy' style='text-decoration:none'>Privacy Policy</a>&nbsp;|&nbsp;<a href='runtime.php?SiteId=240&NavigatorId=37320' style='text-decoration:none'>Site Map</a>&nbsp;|&nbsp;Matthews IMS 4.0 | Powered by <a href='http://www.frontrunnerprofessional.com/' target='_new' style='text-decoration:none'>FrontRunner</a><a href='include/sitelist/sitelist.php'><img src='include/clearpixel.gif' width='1' height='1' border='0' align='absmiddle'></a></center></p>      </div> <!-- #footer -->  </div> <!--#sitewrapper -->
+
+			<SCRIPT LANGUAGE='Javascript'>
+
+			var flyMenu = new makeCM("flyMenu")
+			flyMenu.pxBetween=0
+
+			flyMenu.menuPlacement=1
+			flyMenu.offlineRoot=""
+			flyMenu.onlineRoot=""
+			flyMenu.resizeCheck=1
+			flyMenu.wait=1000
+			flyMenu.fillImg="include/cm_fill.gif"
+			flyMenu.zIndex=-1
+			flyMenu.useBar=0
+		 	flyMenu.fromLeft=0;
+		 	flyMenu.fromTop=0;
+
+			flyMenu.level[0]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[0].width=166-(0*2);
+			flyMenu.level[0].height=20
+			flyMenu.level[0].regClass="flyLevel0"
+			flyMenu.level[0].overClass="flyLevel0over"
+			flyMenu.level[0].borderX=0
+			flyMenu.level[0].borderY=1
+			flyMenu.level[0].borderClass="flyLevel0border"
+			flyMenu.level[0].offsetX=0
+			flyMenu.level[0].offsetY=-1
+			flyMenu.level[0].align="right"
+			flyMenu.level[0].arrow="include/menu_arrow.png"
+			flyMenu.level[0].arrowWidth=10
+			flyMenu.level[0].arrowHeight=9
+			//flyMenu.level[0].arrow=0
+			//flyMenu.level[0].arrowWidth=0
+			//flyMenu.level[0].arrowHeight=0
+
+
+			flyMenu.level[1]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[1].offsetX=-1
+			flyMenu.level[1].regClass="flyLevel1"
+			flyMenu.level[1].overClass="flyLevel1over"
+			flyMenu.level[1].borderX=1
+			flyMenu.level[1].borderY=1
+			flyMenu.level[1].borderClass="flyLevel1border"
+
+			flyMenu.level[2]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[2].regClass="flyLevel2"
+			flyMenu.level[2].overClass="flyLevel2over"
+			flyMenu.level[2].borderClass="flyLevel2border"
+
+			flyMenu.level[3]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[3].regClass="flyLevel0"
+			flyMenu.level[3].overClass="flyLevel0over"
+			flyMenu.level[3].borderClass="flyLevel1border"
+flyMenu.makeMenu('37171','0','&nbsp;&nbsp;Home','./home.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37172','0','&nbsp;&nbsp;About Us','./about_us.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37173','37172','&nbsp;Our Heritage','./our_heritage.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37174','37172','&nbsp;Samuel Flint House','./whats_new.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37175','37172','&nbsp;Affiliations','./Affliliations_-16110.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37177','0','&nbsp;&nbsp;Has a Death Occurred','./death_occurred.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37180','37177','&nbsp;Has a Death Occurred','./has_death_occurred.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37178','37177','&nbsp;Were Pre-Arrangements Made?','./pre_arranged.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37179','37177','&nbsp;Who Else Should Be Contacted','./other_contacts.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37190','0','&nbsp;&nbsp;Locations','./our_facilities.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37191','37190','&nbsp;Irvine Funeral Home Brockville','./irvine_fh_brockville.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37176','37191','&nbsp;Finding Us','./Finding_Us_37176.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37192','37190','&nbsp;Irvine Memorial Chapel Maitland','./Irvine_mc_maitland.html','','', '', '', '', '', '')
+flyMenu.makeMenu('336508','37192','&nbsp;Finding Us','./Finding_Us_336508.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37193','37190','&nbsp;Roselawn Memorial Gardens','./Roselawn_Memorial_Gardens.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37194','37190','&nbsp;Roselawn Crematorium','./crematorium.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37181','0','&nbsp;&nbsp;Our Services','./our_services.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37182','37181','&nbsp;Funeral Expenses','./service_charges.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37189','37181','&nbsp;Estate Benefits Service','./Coming_Events_-16114.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37184','37181','&nbsp;Catering Services','./Catering_Services_37184.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37339','37181','&nbsp;Video Tributes','./Video_Tributes_37339.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37186','0','&nbsp;&nbsp;Client Care','./Client_Care_-57507.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37187','37186','&nbsp;Feedback Form','./Feedback_Form.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37188','37186','&nbsp;Ask the Director','./Ask_the_Director_-4034.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37196','0','&nbsp;&nbsp;Personal Selections','./our_products.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37197','37196','&nbsp;Caskets','javascript:void(0)','','', '', '', '', '', '')
+flyMenu.makeMenu('37198','37197','&nbsp;Casket Selection','./Cremation_Containers_-14576.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37201','37197','&nbsp;Wooden Caskets','./Wooden_Caskets_37201.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37202','37197','&nbsp;Metal Caskets','./Metal_Caskets_37202.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37205','37197','&nbsp;Rental Caskets','./Rental_Caskets_37205.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37199','37197','&nbsp;Cremation Containers','./Cremation_Containers_37199.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37206','37196','&nbsp;Burial Vaults','./Burial_Vaults_-57372.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37214','37196','&nbsp;Cremation Urns','./Cremation_Urns_-57380.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37226','37196','&nbsp;Cremation Vaults','./Cremation_Vaults_-57392.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37233','37196','&nbsp;Memorial Stationery','./Memorial_Stationery_-16137.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37241','0','&nbsp;&nbsp;Pre-Arrangement','./prearrangement_issues.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37242','37241','&nbsp;Pre-Payment Options','./prepayment_options.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37243','37241','&nbsp;Pre-Planning Options','./pre_planning.html','','', '', '', '', '', '')
+flyMenu.makeMenu('225966','37241','&nbsp;Pre-Arrange Online','./Pre-Arrange_Online_225966.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37244','37241','&nbsp;Frequently Asked','./Frequently_Asked_-16127.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37170','37241','&nbsp;Funeral Plans Canada','./Funeral_Plans_Canada_37170.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37252','0','&nbsp;&nbsp;Resource Center','./Resource_Center_-12636.html','','', '', '', '', 'flyLevel0over', 'flyLevel0over')
+flyMenu.makeMenu('37253','37252','&nbsp;Community Links','./Community_Links_-57415.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37254','37253','&nbsp;Accommodations','./Local_Accommodations_-16172.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37256','37253','&nbsp;Flower Shops','./Flower_Shops_-16174.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37257','37253','&nbsp;Local Churches','./Local_Churches_-16175.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37265','37253','&nbsp;Cemeteries','./Cemeteries_37265.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37266','37253','&nbsp;Newspapers','./Newspapers_37266.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37267','37253','&nbsp;Monument Companies','./Local_Monument_Companies_-16261.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37268','37252','&nbsp;Helpful Guidance','./Helpful_Guidance_-57430.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37269','37268','&nbsp;Someone you Love is Dying','./When_Someone_you_Love_is_Dying_-14477.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37270','37268','&nbsp;How do I know...','./-14488.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37271','37268','&nbsp;Organ & Tissue Donations','./FAQs_about_Organ_and_Tissue_Donations_-14569.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37272','37268','&nbsp;Who to Call First?','./Who_to_call_-14574.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37273','37268','&nbsp;Family Emergency','./-14538.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37274','37268','&nbsp;Choosing Clothing','./Choosing_Clothing_37274.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37275','37268','&nbsp;Writing an Obituary','./Writing_an_Obituary_37275.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37276','37268','&nbsp;Funeral Etiquette','./Funeral_Etiquette_37276.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37277','37268','&nbsp;Eulogy\'s','./Eulogys_37277.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37278','37252','&nbsp;Funeral Issues','./Funeral_Issues_-16165.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37279','37278','&nbsp;Embalming','./Embalming_37279.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37280','37278','&nbsp;Burial','./Burial_37280.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37281','37278','&nbsp;Cremation','./Cremation_-14562.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37282','37278','&nbsp;Visitation','./Visitation_37282.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37283','37278','&nbsp;Memorial Services','./Memorial_Services_37283.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37284','37278','&nbsp;Meaningful Services','./Meaningful_Services_37284.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37285','37252','&nbsp;Grief Issues','./Grief_Issues_-57447.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37286','37285','&nbsp;Helping Yourself Heal','./-14489.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37287','37285','&nbsp;Accepting a Loss','./-14490.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37288','37285','&nbsp;Grief','./Grief_Issues_-12651.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37289','37285','&nbsp;The Grieving Process','./-14491.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37290','37285','&nbsp;When Your Parent Dies','./-14492.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37291','37285','&nbsp;Children\'s Corner','./Childerns_Corner_37291.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37292','37252','&nbsp;Legal Issues','./Legal_Issues_-57454.html','','', '', '', '', 'flyLevel0over', 'flyLevel0over')
+flyMenu.makeMenu('37293','37292','&nbsp;Do I need a Lawyer?','./-14509.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37294','37292','&nbsp;Estate Settlement Issues','./-14521.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37295','37292','&nbsp;Important Documents','./-14522.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37296','37292','&nbsp;Death Certificates','./-14524.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37297','37292','&nbsp;Accounts & Deposit Boxes','./-14525.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37298','37292','&nbsp;Executors','./Executors_-14572.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37299','37292','&nbsp;Administration of a Will','./-14526.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37300','37292','&nbsp;Questions About Wills','./Frequently_Asked_Questions_about_Wills_-14566.html','','', '', '', '', 'flyLevel0over', 'flyLevel0over')
+flyMenu.makeMenu('37301','37292','&nbsp;Probate','./-14510.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37302','37292','&nbsp;Notify Creditors','./-14528.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37303','37252','&nbsp;Other Interests','./Interesting_Links_-16171.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37304','37303','&nbsp;Newspaper Guidelines','./Newspaper_Guidelines_-12638.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37338','37252','&nbsp;Grief Words By Dr. Alan Wolfelt','./Grief_Words_By_Dr._Alan_Wolfelt_37338.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37314','0','&nbsp;&nbsp;Contact Us','./contact_us.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37315','37314','&nbsp;Contact Information','./Contact_Information_-16115.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37316','37314','&nbsp;Ask The Director','./Ask_The_Director_-16116.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37317','37314','&nbsp;Employment Opportunities','./Employment_Opportunities_37317.html','','', '', '', '', '', '')
+			function placeFlyMenuElements()
+			{
+			  	pos = findPos('FlyMenu0')
+			 	flyMenu.fromTop = pos[1];
+			 	flyMenu.fromLeft = pos[0];
+				flyMenu.construct(1);	
+			}
+
+
+			flyMenu.construct();
+			placeFlyMenuElements();
+		
+
+			flyMenu.onresize="placeFlyMenuElements();"
+			//flyMenu.onafterresize
+			//window.onresize+=";setTimeout(1000,'placeFlyMenuElements()');";
+			
+			//placeFlyMenuElements()
+
+						//placeFlyMenuElements();
+			var oldOnload = window.onload;
+			window.onload = function(){
+				if(oldOnload){ oldOnload(); }
+				placeFlyMenuElements();
+			}
+</script>
+<!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+<script type="text/javascript" language="JavaScript">var site="s22irvinefh"</script>
+<script type="text/javascript" language="JavaScript1.2" src="http://s22.sitemeter.com/js/counter.js?site=s22irvinefh">
+</script>
+<noscript>
+<a href="http://s22.sitemeter.com/stats.asp?site=s22irvinefh" target="_top">
+<img src="http://s22.sitemeter.com/meter.asp?site=s22irvinefh" alt="Site Meter" border="0"/></a>
+</noscript>
+<!-- Copyright (c)2005 Site Meter -->
+<!--WEBBOT bot="HTMLMarkup" Endspan -->
+
+
+
+</body>
+
+</html>

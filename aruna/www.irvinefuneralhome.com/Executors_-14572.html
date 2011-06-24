@@ -1,0 +1,501 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+<title>Executors</title>
+<script>t=new Date();tomorrow=new Date(t.getYear(), t.getMonth(), t.getDate()+1);document.write("<meta http-equiv='Expires' content='" + tomorrow.toGMTString() + "'>");</script>
+
+		<script>
+		function insertDate()
+		{
+			var today,i,ar,ampm;
+			today = new Date();
+			ar=Array('January','February','March','April','May','June','July','August','September','October','November','December');
+			document.write(' ' + ar[today.getMonth()]);
+			document.write(' ' + today.getDate());
+			if ((navigator.appName=='Netscape')&&(parseFloat(navigator.appVersion)<=4.01))
+			{
+				i=today.getYear();
+					if ((i>=0)&&(i<=99))
+					{
+						if (i<=9) i='190'+i;
+						else i='19'+i;
+					}
+			}
+			else
+			{
+				i=today.getFullYear();
+			}
+			document.write(', ' + i);
+		}
+		</script>
+		
+		<style type='text/css'>
+		<!--
+
+		body { margin-right:0px; margin-left:0px; margin-top:0px; margin-bottom:0px; }
+
+		A.b { text-decoration:none; }
+		A.b:link, A.b:visited, A.b:active { color: #FFFFFF; }
+		A.b:hover { color: #FF0000; }
+
+		A.bsel { text-decoration:none; }
+		A.bsel:link, A.bsel:visited, A.bsel:active { color: #FF0000; }
+		A.bsel:hover { color: #FF0000; }
+		
+		-->
+</style>
+
+
+		<script>
+		function insertDate()
+		{
+			var today,i,ar,ampm;
+			today = new Date();
+			ar=Array('January','February','March','April','May','June','July','August','September','October','November','December');
+			document.write(' ' + ar[today.getMonth()]);
+			document.write(' ' + today.getDate());
+			if ((navigator.appName=='Netscape')&&(parseFloat(navigator.appVersion)<=4.01))
+			{
+				i=today.getYear();
+					if ((i>=0)&&(i<=99))
+					{
+						if (i<=9) i='190'+i;
+						else i='19'+i;
+					}
+			}
+			else
+			{
+				i=today.getFullYear();
+			}
+			document.write(', ' + i);
+		}
+		</script>
+		
+		<style type='text/css'>
+		<!--
+			.clCMEvent{position:absolute; width:99%; height:99%; clip:rect(0,100%,100%,0); left:0; top:0; visibility:visible}
+			.clCMAbs{position:absolute; visibility:hidden; left:0; top:0}
+		-->
+		</style>
+
+		<script language="JavaScript1.2" src="include/coolmenus4.js">
+		/*
+			Copyright (c) 2001 Thomas Brattli (webmaster@dhtmlcentral.com)
+
+			DHTML coolMenus - Get it at coolmenus.dhtmlcentral.com
+			Version 4.0_beta
+			This script can be used freely as long as all copyright messages are
+			intact.
+		*/
+		</script>
+		<script language="JavaScript1.2" src="include/cm_addins.js">
+		/*
+			Copyright (c) 2001 Thomas Brattli (webmaster@dhtmlcentral.com)
+			Coolmenus add-in file for more advanced featuers..
+		*/
+		</script>
+
+		<script Language="Javascript">
+			//Extra code to find position:
+
+/*
+			function findPos(objname)
+			{
+					//alert(objname)
+					if(bw.ns4)
+					{   //Netscape 4
+						x = document.layers[objname].pageX
+						y = document.layers[objname].pageY
+					}
+					else
+					{ //other browsers
+						s = "";
+					
+						x=0; y=0; 
+						var el,temp
+						el = bw.ie4?document.all[objname]:document.getElementById(objname);
+						
+						if (bw.moz)
+						{
+							if (el.firstChild)
+							{
+								if (el.firstChild.tagName=="IMG")
+								{
+									el = el.firstChild;
+								}
+							}		
+						}
+						
+						
+						if(el.offsetParent)
+						{
+							temp = el
+	
+							while(temp.offsetParent)
+							{ //Looping parent elements to get the offset of them as well
+								temp=temp.offsetParent;
+								x+=temp.offsetLeft
+								y+=temp.offsetTop;
+							}
+						}
+						
+						x+=el.offsetLeft
+						y+=el.offsetTop
+					}
+					
+					return [x,y]
+			}		
+*/
+
+
+// find left X coordinate of a DOM object (Quirksmode solution, but modified to fix for Safari)
+findPosX = function(DOMobj)
+{               
+        var curleft = 0;
+        if(DOMobj.offsetParent)
+        {
+                while(1)
+                {
+                        curleft += DOMobj.offsetLeft;
+                        if(!DOMobj.offsetParent) break;                        DOMobj = DOMobj.offsetParent;
+                }
+        }
+        else if(DOMobj.x)
+        {       
+                curleft += DOMobj.x;        }
+        return curleft;
+}
+
+
+// find top Y coordinate of a DOM object (Quirksmode solution, but modified to fix for Safari)
+findPosY = function(DOMobj)
+{
+        var curtop = 0;
+        if(DOMobj.offsetParent)
+        {
+                while(1)
+                {
+                        curtop += DOMobj.offsetTop;
+                        if(!DOMobj.offsetParent) break;
+                        DOMobj = DOMobj.offsetParent;
+                }
+        }
+        else if(obj.y)
+        {
+                curtop += DOMobj.y;
+        }
+        return curtop;
+}
+
+function findPos(objname)
+{
+        var objTest = document.getElementById(objname);
+
+        return [findPosX(objTest),findPosY(objTest)];
+}
+
+</script>
+
+
+			<style type='text/css'>
+			<!--
+				.flyLevel0,.flyLevel0over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel0{background-color:#191717; layer-background-color:#191717; color:#ffffff;}
+				.flyLevel0over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel0border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+	
+				.flyLevel1,.flyLevel1over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel1{background-color:#7e7e7e; layer-background-color:#7e7e7e; color:#ffffff;}
+				.flyLevel1over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel1border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+	
+				.flyLevel2,.flyLevel2over{position:absolute; padding:2px; font-family:arial,helvetica; font-size:11px; }
+				.flyLevel2{background-color:#7e7e7e; layer-background-color:#7e7e7e; color:#ffffff;}
+				.flyLevel2over{background-color:#4f7342; layer-background-color:#4f7342; color:#ffffff; cursor:pointer; cursor:hand; }
+				.flyLevel2border{position:absolute; visibility:hidden; background-color:#999999; layer-background-color:#999999}
+			-->
+			</style>
+			
+<link rel="stylesheet" type="text/css" href="reset.css" />
+<link rel="stylesheet" type="text/css" href="core.css" />
+<script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2"></script>
+<script type="text/javascript" src="adv_tunnel.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.2.72.js"></script>
+
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="ie6.css" />
+<script type="text/javascript" src="dd_belated_pngfix.js"></script>
+<script type="text/javascript" src="ie6.js"></script>
+<![endif]-->
+</head>
+
+<body id='frp_siteid_240' class='frp_navigator_37298 frp_section_resource-center frp_template_mp-v1 frp_branch_1' topmargin='0' leftmargin='0' marginheight='0' marginwidth='0'  bgcolor='#191717' link='#FF0000' text='#000000'>
+
+
+<div id="bggradient"></div>    <div id="sitewrapper">      <div id="pagewrapper">        <div id="header">        <div id="logo">      <a href="home.html"><span>Irvine Memorial</span></a>        </div>                <div id="deathnotices">      <INPUT name='CondolenceSearch' id='CondolenceSearch' style='font-family:Arial; font-size:8pt; width:120px; border-style:border-collapse; border-color:#000000; border-width:1px;'><A HREF='javascript:doCondolences()' style='text-decoration:none;'><img src="condolencesearch-btn.gif"></A><SCRIPT Language='Javascript'>function doCondolences() { var s = document.getElementById('CondolenceSearch').value; if (s) window.location="./runtime.php?SiteId=240&NavigatorId=37306&Keywords="+s; return; } </SCRIPT>        </div>            </div> <!--header-->        <div id="date"><script language='Javascript'>insertDate();</script></div>        <div id="column1">                <div id="quicksearch">      <p>Quick Search</p>      <input type='text' id='Search' value='Search keyword(s)' onclick='if (this.value=="Search keyword(s)") this.value=""' onkeypress='if (event.keyCode == 13) searchClick(); else return true;' style='font-family:Arial; font-size:8pt; width:115px; border-style:border-collapse; border-color:#000000; border-width:1px;'><a href='javascript:searchClick()' style='text-decoration:none'><img src="go-btn.gif" align="absmiddle"></A><script language='Javascript'>function searchClick(){var s=document.getElementById('Search').value; if(s){window.location='runtime.php?SiteId=240&NavigatorId=37320&op=search&Search='+s; return;}}</script>        </div>                <div id="navigation">      <img id="FlyMenu0" src="include/cm_fill.gif" width="166" height="211" alt="" border="0">        </div>    </div> <!--#column1-->    <div id="column2">                <div id="bodywrapper">      
+<font face="Arial,Helvetica,Sans Serif" size="2"><strong><font face="Times New Roman,Times,Serif" size="4">
+</font></strong></font><p align="left"><font face="Arial,Helvetica,Sans Serif" size="2"><strong><font face="Times New Roman,Times,Serif" size="4"><font face="arial,helvetica,sans-serif" size="3">Executors</font><br /></font></strong>Your executor has full resposiblility with 
+regards to your funeral arrangements.&nbsp; If so desired your executor can 
+change anything with reference to those arrangements.&nbsp; This is the person 
+all funeral homes take direction from.</font> </p>
+
+<p><font face="Arial,Helvetica,Sans Serif" size="2">Since your Personal 
+  Representative is given access to all property in the probate estate, the 
+  selection of a competent and trustworthy person is very important. It is wise 
+  to nominate someone who has business experience, intelligence, and the utmost 
+  integrity and honesty to serve as your Personal Representative. Your 
+  nomination of Personal Representative, (along with Alternatives who are asked 
+  to serve in the event that the prior nominee is unwilling or unable to act), 
+  should appear in your Will. This is your chance to tell the court whom you 
+  think is best to do this job for you (since you can't speak to the court in 
+  person). </font></p>
+  <p dir="ltr"><font face="Arial,Helvetica,Sans Serif" size="2">Most jurisdictions require the Personal 
+  Representative to post a surety bond covering their actions. This requirement 
+  can be waived if your Will states that you want your nominated Personal 
+  Representative to serve without bond.</font></p>
+<p /><table border=0><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>1.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7016'>What is an Executor?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>2.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7017'>What are the responsibilities of the executor?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>3.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7018'>Does the executor have to serve?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>4.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7019'>Who can be appointed an Executor of my Will?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr><tr><td align='right' valign='top'><font face=Arial size=2><span class='faq_questionlink faq_questionlink_number'>5.&nbsp;</span></font></td><td align='left' valign='top'><font face=Arial size=2><span class='faq_questionlink'><a href='#f7020'>Does the executor get paid?</span></a><br></font></td></tr><tr><td colspan=2><font face=Arial size=1>&nbsp;</font></td></tr></table><br>
+<table width='100%'><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7016'>Question</a>&nbsp;#1</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>What is an Executor? </b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>The Personal Representative of your estate (also commonly referred to as an administrator or executor) is responsible to gather and inventory all of your property at the time of your death, determine all your outstanding debts, pay all of your legitimate debts and then distribute the remaining property in accordance with the instructions provided in your Will.<br />
+<br />
+The Personal Representative is appointed as part of the probate proceeding and has the responsibility for guiding your property through the proceeding, subject to established probate rules and procedures. &nbsp; In many areas, the court has a considerable amount of control over the activities of the Personal Representative, and prior permission of the court is required for the Personal Representative to take action with respect to property in the probate estate. <br />
+<br />
+<br />
+ <br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7017'>Question</a>&nbsp;#2</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>What are the responsibilities of the executor?</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>The following are some of the general responsibilties of the executor in taking charge of the assets of the deceased, paying the debts, and distributing the assets to the beneficiaries. This list is not intended to be complete but does indicate the type of issues. Your lawyer will provide you with a complete list. <br />
+Ensure that all the real property is protected, including arranging if necessary fire insurance on buildings, changing locks to protect assets <br />
+<br />
+Locate safely deposit boxes and attempt to locate the key. <br />
+<br />
+Selecting the lawyer to act for the estate and obtaining from them notarial copies of the death certiciate. Choose a lawyer who has extensive experience in Wills and Estates work. Pick an accountant to assist you if your lawyer suggests this is appropriate. Discuss the lawyers and accountants fees and disbursements right up front. <br />
+<br />
+Locate all life insurance policies and notify the insurance company of the death and forward a copy of the death certificate to have the policy paid to the beneficiary. <br />
+<br />
+Notify all insurance companies including house insurance and car insurance of the death. Ensure that insurance is maintained make a list of all the assets and including stocks, bonds, pension funds, bank accounts, government investments, superannuation payments, holiday pay from work, work related life insurance or benefits for the spouse etc. <br />
+<br />
+Are there any interests in partnerships or companies and locate shareholders and partnership agreements and provide a copy to the lawyer for his examination. (there may be triggering clauses in those agreements that must be met quickly) <br />
+<br />
+In conjunction with discussions with the spouse, <br />
+<br />
+Locate the previous several year's income tax returns and provide copies to the lawyer or tax accountant. These must be reviewed quickly to ensure that no filing dates are missed. Government tax authorities do not care that the person is deceased. The executor may be personally liable for any tax penalties that are incurred because filing dates are missed. <br />
+<br />
+Pay the account of the funeral director. Your lawyer will tell you the priority of paying debts, but normally the funeral directors account is to be paid before most other debts.<br />
+<br />
+Make a list of all debts. This will include accounts for charge cards, house utilities, property tax arrears, income tax arrears, loan payments, outstanding leases, mortgages on house or vehicles, alimony or prior separation agreement. Provide this list and supporting documentation to the lawyer. <br />
+<br />
+Once all the assets have been located and the debts paid (including the account of the executor) then the estate will be disbursed in accordance with law and the terms of the Will. <br />
+<br />
+You will need to advertise for creditors in the local newspaper to ensure that all the debts are known and paid. <br />
+<br />
+Your lawyer will advise whether any court proceeding is required regarding the Will. This is called filing for Probate. Often if there is adequate tax advice at an earlier date, the requirement for Probate can be avoided. This will save the estate considerable money. <br />
+<br />
+You will need to notify the beneficiaries about their bequest and provided there is money left after the payment of all debts, the beneficiaries will receive their money or assets from you as Executor of the estate. <br />
+<br />
+You may need to open up a Bank Acocount in the name of the Estate at your local bank using a notarial copy of the Will (or Probate if required) together with a copy of the death certificate. Use a chequing account that you receive the cheques back so you can verify that you paid the funds if required at a later date. </font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7018'>Question</a>&nbsp;#3</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>Does the executor have to serve?</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>No, it is your choice to serve or decline to serve. If you choose to serve as Personal Representative (Executor) you can later resign, although you may have to provide an &quot;accounting&quot; for the period you served. If you decline to serve, or resign after serving, the alternate Executor named in the Will typically is then appointed by the probate court. <br />
+<br />
+If no alternate is named in the Will, or the named alternates die or are unwilling to serve, or a person dies without a Will, the probate court will appoint someone to serve. <br />
+<br />
+Unless local laws require that another family member or beneficiary wishing to serve be appointed, and such family members or beneficiaries are qualified, willing to serve and readily available, it is not unheard of for a probate court to select a &quot;political crony&quot; or a trust company that has made contributions to the judge of their political party to serve as the Personal Representative as the fees sometimes can be quite lucrative.<br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7019'>Question</a>&nbsp;#4</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>Who can be appointed an Executor of my Will? <br />
+</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>Probably the most important qualification for an executor is to ensure that the person that you select to be your Executor under your Will be blessed with common sense and a sense of fairness in following through the obligations that the executor has under the Will. <br />
+<br />
+As some jurisdictions have residency qualifications for the Executor, you may wish to ensure that you select as executors for your Will people who reside in the state where you live. &nbsp; <br />
+<br />
+If you have made provision that the Executor is to make payments to the Trustees for any minor children or grandchildren, then this obligation may continue for many years. &nbsp;As these are on-going obligations under the trust provisions in the Will &nbsp;make sure that the executors are not too elderly. &nbsp;You do not want the executors to decease before the estate is administered and closed. &nbsp; <br />
+<br />
+The naming of an executor under the Will does not mean that the nominated person must act. This person may decline to act, as an executor. &nbsp;To protect the estate make sure that you have a back-up executor named in the Will. &nbsp;Typical, wording is as follows: &nbsp;&quot;In the event that John Smith neglects or refuses to act as my executor then I nominate John Adams as my executor.&quot; There is no magic in the wording as long as the intent is clear. <br />
+<br />
+Often an accountant, financial advisor, or lawyer is also nominated as a second executor. &nbsp;This joint executor ensures that there is a solid degree of competence and experience which is especially important if there are substantial assets involved or Trusts to be administered.<br />
+<br />
+</font></td></tr><tr><td colspan=2><br></td></tr><tr class='faq_questionwrapper'><td class='faq_questionheader' width='15%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><a name='f7020'>Question</a>&nbsp;#5</font></td><td class='faq_question' width='85%' bgcolor='#E9E9E9' valign='top'><font face=Arial size=2><b>Does the executor get paid?</b></font></td></tr><tr class='faq_answerwrapper'><td class='faq_answerheader' width='15%' valign='top'><font face=Arial size=2>Answer:</font></td><td class='faq_answer' width='85%' valign='top'><font face=Arial size=2>Yes. In addition to all out-of-pocket expenses in managing and settling the estate, Personal Representatives (executors) generally earn a fee of about 2% of the probate estate for their work. (This varies moderately in jurisdictions and generally decreases as a percentage as the size of the estate increases). <br />
+<br />
+All fees and reimbursed expenses are subject to court approval. The court in cases of unusually difficult or extraordinary circumstances may allow additional fees. On the other hand, if a Personal Representative is derelict in duty, the court may reduce or deny compensation, and the Personal Representative may be held responsible for any damages they caused. <br />
+<br />
+If a person is both the sole beneficiary of the estate, and the estate is not subject to Federal Estate Tax, it usually does not make sense to take any fees as all fee income is subject to Income Tax. (The money a beneficiary receives from the estate is income tax free).<br />
+</font></td></tr><tr><td colspan=2><br></td></tr></table><FONT size=2  
+><BR><BR><BR></FONT><img src='include/navassist.php?sid=240&nid=37298&a=19&u=irvine&adm=0&o=publish' style='position:absolute;top:0px;left:0px'>        </div> <!--#bodywrapper-->    </div> <!--#column2-->            <div id="clear"></div>    <div class="clear"></div>      </div> <!-- #pagewrapper -->            <div id="footer">    <p>4 James St.| Brockville, Ontario K6V 1J9 | Phone: (613) 342-2828<br/>    2451 County Rd. 15 P.O. Box 44 | Maitland, Ontario K0E 1P0 | Phone: (613) 348-3405<br/>    <center><a href='https://irvinefuneral.frontrunnerpro.com/' target='_new' style='text-decoration:none'>Admin</a>&nbsp;|&nbsp;<a href='runtime.php?NavigatorId=37298&SiteId=240&op=privacy' style='text-decoration:none'>Privacy Policy</a>&nbsp;|&nbsp;<a href='runtime.php?SiteId=240&NavigatorId=37320' style='text-decoration:none'>Site Map</a>&nbsp;|&nbsp;Matthews IMS 4.0 | Powered by <a href='http://www.frontrunnerprofessional.com/' target='_new' style='text-decoration:none'>FrontRunner</a><a href='include/sitelist/sitelist.php'><img src='include/clearpixel.gif' width='1' height='1' border='0' align='absmiddle'></a></center></p>      </div> <!-- #footer -->  </div> <!--#sitewrapper -->
+
+			<SCRIPT LANGUAGE='Javascript'>
+
+			var flyMenu = new makeCM("flyMenu")
+			flyMenu.pxBetween=0
+
+			flyMenu.menuPlacement=1
+			flyMenu.offlineRoot=""
+			flyMenu.onlineRoot=""
+			flyMenu.resizeCheck=1
+			flyMenu.wait=1000
+			flyMenu.fillImg="include/cm_fill.gif"
+			flyMenu.zIndex=-1
+			flyMenu.useBar=0
+		 	flyMenu.fromLeft=0;
+		 	flyMenu.fromTop=0;
+
+			flyMenu.level[0]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[0].width=166-(0*2);
+			flyMenu.level[0].height=20
+			flyMenu.level[0].regClass="flyLevel0"
+			flyMenu.level[0].overClass="flyLevel0over"
+			flyMenu.level[0].borderX=0
+			flyMenu.level[0].borderY=1
+			flyMenu.level[0].borderClass="flyLevel0border"
+			flyMenu.level[0].offsetX=0
+			flyMenu.level[0].offsetY=-1
+			flyMenu.level[0].align="right"
+			flyMenu.level[0].arrow="include/menu_arrow.png"
+			flyMenu.level[0].arrowWidth=10
+			flyMenu.level[0].arrowHeight=9
+			//flyMenu.level[0].arrow=0
+			//flyMenu.level[0].arrowWidth=0
+			//flyMenu.level[0].arrowHeight=0
+
+
+			flyMenu.level[1]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[1].offsetX=-1
+			flyMenu.level[1].regClass="flyLevel1"
+			flyMenu.level[1].overClass="flyLevel1over"
+			flyMenu.level[1].borderX=1
+			flyMenu.level[1].borderY=1
+			flyMenu.level[1].borderClass="flyLevel1border"
+
+			flyMenu.level[2]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[2].regClass="flyLevel2"
+			flyMenu.level[2].overClass="flyLevel2over"
+			flyMenu.level[2].borderClass="flyLevel2border"
+
+			flyMenu.level[3]=new cm_makeLevel() //Add this for each new level
+			flyMenu.level[3].regClass="flyLevel0"
+			flyMenu.level[3].overClass="flyLevel0over"
+			flyMenu.level[3].borderClass="flyLevel1border"
+flyMenu.makeMenu('37171','0','&nbsp;&nbsp;Home','./home.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37172','0','&nbsp;&nbsp;About Us','./about_us.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37173','37172','&nbsp;Our Heritage','./our_heritage.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37174','37172','&nbsp;Samuel Flint House','./whats_new.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37175','37172','&nbsp;Affiliations','./Affliliations_-16110.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37177','0','&nbsp;&nbsp;Has a Death Occurred','./death_occurred.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37180','37177','&nbsp;Has a Death Occurred','./has_death_occurred.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37178','37177','&nbsp;Were Pre-Arrangements Made?','./pre_arranged.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37179','37177','&nbsp;Who Else Should Be Contacted','./other_contacts.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37190','0','&nbsp;&nbsp;Locations','./our_facilities.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37191','37190','&nbsp;Irvine Funeral Home Brockville','./irvine_fh_brockville.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37176','37191','&nbsp;Finding Us','./Finding_Us_37176.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37192','37190','&nbsp;Irvine Memorial Chapel Maitland','./Irvine_mc_maitland.html','','', '', '', '', '', '')
+flyMenu.makeMenu('336508','37192','&nbsp;Finding Us','./Finding_Us_336508.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37193','37190','&nbsp;Roselawn Memorial Gardens','./Roselawn_Memorial_Gardens.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37194','37190','&nbsp;Roselawn Crematorium','./crematorium.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37181','0','&nbsp;&nbsp;Our Services','./our_services.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37182','37181','&nbsp;Funeral Expenses','./service_charges.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37189','37181','&nbsp;Estate Benefits Service','./Coming_Events_-16114.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37184','37181','&nbsp;Catering Services','./Catering_Services_37184.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37339','37181','&nbsp;Video Tributes','./Video_Tributes_37339.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37186','0','&nbsp;&nbsp;Client Care','./Client_Care_-57507.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37187','37186','&nbsp;Feedback Form','./Feedback_Form.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37188','37186','&nbsp;Ask the Director','./Ask_the_Director_-4034.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37196','0','&nbsp;&nbsp;Personal Selections','./our_products.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37197','37196','&nbsp;Caskets','javascript:void(0)','','', '', '', '', '', '')
+flyMenu.makeMenu('37198','37197','&nbsp;Casket Selection','./Cremation_Containers_-14576.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37201','37197','&nbsp;Wooden Caskets','./Wooden_Caskets_37201.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37202','37197','&nbsp;Metal Caskets','./Metal_Caskets_37202.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37205','37197','&nbsp;Rental Caskets','./Rental_Caskets_37205.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37199','37197','&nbsp;Cremation Containers','./Cremation_Containers_37199.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37206','37196','&nbsp;Burial Vaults','./Burial_Vaults_-57372.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37214','37196','&nbsp;Cremation Urns','./Cremation_Urns_-57380.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37226','37196','&nbsp;Cremation Vaults','./Cremation_Vaults_-57392.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37233','37196','&nbsp;Memorial Stationery','./Memorial_Stationery_-16137.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37241','0','&nbsp;&nbsp;Pre-Arrangement','./prearrangement_issues.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37242','37241','&nbsp;Pre-Payment Options','./prepayment_options.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37243','37241','&nbsp;Pre-Planning Options','./pre_planning.html','','', '', '', '', '', '')
+flyMenu.makeMenu('225966','37241','&nbsp;Pre-Arrange Online','./Pre-Arrange_Online_225966.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37244','37241','&nbsp;Frequently Asked','./Frequently_Asked_-16127.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37170','37241','&nbsp;Funeral Plans Canada','./Funeral_Plans_Canada_37170.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37252','0','&nbsp;&nbsp;Resource Center','./Resource_Center_-12636.html','','', '', '', '', 'flyLevel0over', 'flyLevel0over')
+flyMenu.makeMenu('37253','37252','&nbsp;Community Links','./Community_Links_-57415.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37254','37253','&nbsp;Accommodations','./Local_Accommodations_-16172.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37256','37253','&nbsp;Flower Shops','./Flower_Shops_-16174.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37257','37253','&nbsp;Local Churches','./Local_Churches_-16175.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37265','37253','&nbsp;Cemeteries','./Cemeteries_37265.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37266','37253','&nbsp;Newspapers','./Newspapers_37266.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37267','37253','&nbsp;Monument Companies','./Local_Monument_Companies_-16261.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37268','37252','&nbsp;Helpful Guidance','./Helpful_Guidance_-57430.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37269','37268','&nbsp;Someone you Love is Dying','./When_Someone_you_Love_is_Dying_-14477.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37270','37268','&nbsp;How do I know...','./-14488.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37271','37268','&nbsp;Organ & Tissue Donations','./FAQs_about_Organ_and_Tissue_Donations_-14569.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37272','37268','&nbsp;Who to Call First?','./Who_to_call_-14574.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37273','37268','&nbsp;Family Emergency','./-14538.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37274','37268','&nbsp;Choosing Clothing','./Choosing_Clothing_37274.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37275','37268','&nbsp;Writing an Obituary','./Writing_an_Obituary_37275.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37276','37268','&nbsp;Funeral Etiquette','./Funeral_Etiquette_37276.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37277','37268','&nbsp;Eulogy\'s','./Eulogys_37277.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37278','37252','&nbsp;Funeral Issues','./Funeral_Issues_-16165.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37279','37278','&nbsp;Embalming','./Embalming_37279.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37280','37278','&nbsp;Burial','./Burial_37280.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37281','37278','&nbsp;Cremation','./Cremation_-14562.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37282','37278','&nbsp;Visitation','./Visitation_37282.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37283','37278','&nbsp;Memorial Services','./Memorial_Services_37283.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37284','37278','&nbsp;Meaningful Services','./Meaningful_Services_37284.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37285','37252','&nbsp;Grief Issues','./Grief_Issues_-57447.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37286','37285','&nbsp;Helping Yourself Heal','./-14489.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37287','37285','&nbsp;Accepting a Loss','./-14490.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37288','37285','&nbsp;Grief','./Grief_Issues_-12651.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37289','37285','&nbsp;The Grieving Process','./-14491.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37290','37285','&nbsp;When Your Parent Dies','./-14492.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37291','37285','&nbsp;Children\'s Corner','./Childerns_Corner_37291.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37292','37252','&nbsp;Legal Issues','./Legal_Issues_-57454.html','','', '', '', '', 'flyLevel0over', 'flyLevel0over')
+flyMenu.makeMenu('37293','37292','&nbsp;Do I need a Lawyer?','./-14509.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37294','37292','&nbsp;Estate Settlement Issues','./-14521.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37295','37292','&nbsp;Important Documents','./-14522.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37296','37292','&nbsp;Death Certificates','./-14524.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37297','37292','&nbsp;Accounts & Deposit Boxes','./-14525.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37298','37292','&nbsp;Executors','./Executors_-14572.html','','', '', '', '', 'flyLevel0over', 'flyLevel0over')
+flyMenu.makeMenu('37299','37292','&nbsp;Administration of a Will','./-14526.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37300','37292','&nbsp;Questions About Wills','./Frequently_Asked_Questions_about_Wills_-14566.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37301','37292','&nbsp;Probate','./-14510.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37302','37292','&nbsp;Notify Creditors','./-14528.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37303','37252','&nbsp;Other Interests','./Interesting_Links_-16171.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37304','37303','&nbsp;Newspaper Guidelines','./Newspaper_Guidelines_-12638.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37338','37252','&nbsp;Grief Words By Dr. Alan Wolfelt','./Grief_Words_By_Dr._Alan_Wolfelt_37338.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37314','0','&nbsp;&nbsp;Contact Us','./contact_us.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37315','37314','&nbsp;Contact Information','./Contact_Information_-16115.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37316','37314','&nbsp;Ask The Director','./Ask_The_Director_-16116.html','','', '', '', '', '', '')
+flyMenu.makeMenu('37317','37314','&nbsp;Employment Opportunities','./Employment_Opportunities_37317.html','','', '', '', '', '', '')
+			function placeFlyMenuElements()
+			{
+			  	pos = findPos('FlyMenu0')
+			 	flyMenu.fromTop = pos[1];
+			 	flyMenu.fromLeft = pos[0];
+				flyMenu.construct(1);	
+			}
+
+
+			flyMenu.construct();
+			placeFlyMenuElements();
+		
+
+			flyMenu.onresize="placeFlyMenuElements();"
+			//flyMenu.onafterresize
+			//window.onresize+=";setTimeout(1000,'placeFlyMenuElements()');";
+			
+			//placeFlyMenuElements()
+
+						//placeFlyMenuElements();
+			var oldOnload = window.onload;
+			window.onload = function(){
+				if(oldOnload){ oldOnload(); }
+				placeFlyMenuElements();
+			}
+</script>
+<!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+<script type="text/javascript" language="JavaScript">var site="s22irvinefh"</script>
+<script type="text/javascript" language="JavaScript1.2" src="http://s22.sitemeter.com/js/counter.js?site=s22irvinefh">
+</script>
+<noscript>
+<a href="http://s22.sitemeter.com/stats.asp?site=s22irvinefh" target="_top">
+<img src="http://s22.sitemeter.com/meter.asp?site=s22irvinefh" alt="Site Meter" border="0"/></a>
+</noscript>
+<!-- Copyright (c)2005 Site Meter -->
+<!--WEBBOT bot="HTMLMarkup" Endspan -->
+
+
+
+</body>
+
+</html>

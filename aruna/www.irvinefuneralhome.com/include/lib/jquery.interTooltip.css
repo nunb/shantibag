@@ -1,0 +1,22 @@
+/* jQuery Interactive Tooltip Plugin CSS */
+/* @author Scott Gibson */
+
+.interTooltip-trigger-element {
+	cursor: pointer;	
+}
+
+.interTooltip-tooltip {
+	position:absolute;
+	min-width:100px;
+	max-width:280px;
+	border:1px solid #777;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	background:#FFF;
+	font-size:12px;
+	font-family:Arial;
+	padding:3px;
+	color: #000;
+	z-index: 99999;
+}

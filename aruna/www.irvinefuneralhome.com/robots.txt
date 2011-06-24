@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+/runtime.php?SiteId=2828&NavigatorId=51135&op=moreinfo&viewOpt=dpaneOnly&ItemId=457843
+Allow: /

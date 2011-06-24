@@ -1,0 +1,208 @@
+#deceased_records h1
+{
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	color: #807c7d;
+}
+
+#deceased_records h2
+{
+	padding: 0px;
+	margin: 0px;
+	font-size: 10px;
+	color: #807c7d;
+}
+
+#deceased_records ul
+{
+    margin: 0px;
+	list-style: none;
+	padding: 0 0 0 4px;
+}
+
+#deceased_records li
+{
+	color: #064a5d;
+	font-weight: bold;
+}
+
+#deceased_records p
+{
+	padding-top: 1px;
+    padding-right: 10px;
+}
+
+#deceased_records p a
+{
+	color: #064a5d;
+	font-weight: bold;
+}
+
+#deceased_records
+{
+	display: block;
+	float: left;
+	background: url('include/images/page/FRPRecord/v3/forest/images/listing-background.jpg') no-repeat bottom;
+	width: 522px;
+	height: 150px;
+    border-bottom: 1px solid black;
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+#condWrap,
+#condWrap #condList td {
+    display: block;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    background: white;
+    padding: 20px;
+}
+#condWrap p,
+#condWrap ul {
+	font-size: 11px;
+	line-height: normal;
+}
+#condWrapInner {
+    position: relative;
+    width: auto !important;
+    /*margin: 20px;*/
+}
+#condWrap a {text-decoration: none; color: #004a5d; font-weight: bold;}
+
+/*
+#condControls {text-align: center; height: 25px; margin: 0px; background: #004a5d;}
+#condControls a {float: left; display: block; line-height: 25px; vertical-align: middle; color: #ffffff; padding-left: 10px;}
+#condSearch {float: right; position: relative; height: 25px; vertical-align: middle; line-height: 25px; margin: 0 10px 0;}
+#condSearchBox {height: 19px; width: 100px; font-size: 10px;}
+#condSearchBtn {background: url(condSearchBtn-bg.png) no-repeat; border: 0; width: 66px; height: 18px; margin-left: 5px;}
+#condSearch label {display: none;}
+*/
+
+#condControls {background: #476168; border-radius: 5px; padding: 10px; color: #fff;}
+#condFilterControls {padding-bottom: 10px; border-bottom: 1px solid #546c73; text-align: center; margin-bottom: 10px; line-height: 12px;}
+#condFilterControls a {display: inline; color: #fff; font-weight: bold; font-size: 12px; text-decoration: underline;}
+#condCurrentBtn {padding-right: 10px; border-right: 1px solid #546c73;}
+#condPastBtn {padding-left: 10px;}
+#condSearchBox{background: #a9bcc1; border: 1px solid #3a5055;}
+#condSearchBtn {background: #687e83; color: #fff; font-size: 10px; border: 1px solid #3a5055;}
+#dateRangeWrapper,
+#searchBoxWrapper {float: left; display: inline; position: relative;}
+#dateRangeWrapper {overflow: visible; float: right;}
+#condSearch #date-range-display {margin-right: 10px;}
+#condSort {padding: 10px 0 0 0; border-top: 1px solid #546c73; line-height: 10px; text-align: center; color: #829298}
+#condSort a {font-size: 10px; color: #fff; font-weight: normal;}
+
+#condHeader {
+    position: relative;
+    color: #807c7d;
+    text-align: center;
+}
+#condHeader h1 {
+    position: relative;
+    width: 350px;
+    height: 60px;
+    margin: 0 auto;
+    background: url(bom-online-tributes-header.png) no-repeat;
+}
+#condHeader h1 span {display: none;}
+
+#condList .recordImg,
+#condList .condRecordBody {float: left;}
+#condList .clear,
+#condList .condRecord {clear: left;}
+
+.recordImg {padding-right: 10px; padding-bottom: 5px;}
+
+#condSort { text-align: center; clear: both;}
+#condSort p {display: none; margin: 0; padding: 0;}
+#condSort ul {list-style-type: none; margin: 0;}
+#condWrap #condSort li {display: inline; margin: 0 !important; list-style-image: none !important; list-style-type: none !important;}
+#condList {position: relative; width: 100%;}
+#condList .obitlinks li,
+#condList .obitlinks ul {margin: 0 !important; list-style-type: none !important;}
+/*#condList h2 {font-size: 14px; margin: 5px 0;}*/
+.condRecord {position: relative; display: block; border-bottom: 1px solid black; padding: 5px 0; margin: 12px 0; background: transparent;}
+
+.condRecord h3 {font-size: 14px;padding: 0; margin: 0;}
+.condRecord h3 a {color: #807c7d !important;}
+.condRecord .condRecordDates {margin: 2px 0; padding: 0; color: #807c7d;}
+.condRecord a.condRecordView {position: absolute; top: 3px; right: 0px; /*width: 100%;*/ text-align: right; display: block; }
+
+#condFooter {clear: both; position: relative;}
+
+#condFooterPrev,
+#condFooterNext,
+#condFooterPages {height: 20px; line-height: 20px; vertical-align: middle;}
+
+#condFooterPrev,
+#condFooterNext {position: absolute; top: 0px;}
+#condFooterPrev {left: 0px;}
+#condFooterPages {margin: 0; padding: 0; text-align: center;}
+#condFooterNext {text-align: right; right: 0px;}
+
+/* NEW THEME'D LISTING */
+
+.obitlisting {position: relative; background-repeat: repeat-x; background-position: left bottom; background-color: #ffffff; border-bottom: 1px solid black; clear: both; overflow: auto; padding: 0;}
+.obitinfo {position: relative; padding: 10px 178px 5px 96px; z-index: 1;}
+#condList .obitinfo a {color: #000000; font-weight: normal;}
+#condWrap #condList .obitinfo h1 { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #807c7d; padding: 0; margin: 0; display: block;}
+#condWrap #condList .obitinfo h2 { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #807c7d; padding: 0; margin: 0;}
+.obitpicture {position: relative; float: left; width: 76px; padding: 10px; top: 0; left: 0; z-index: 2;}
+.obitlinks {position: relative; float: right; width: 162px; padding: 5px 0; top: 0px; right: 0px; z-index: 2; background: transparent;}
+.obitlinks h3 {position: relative; font-size: 14px; margin: 0; padding: 0; width: 149px; height: 31px; background: url(images/bom-icon.png) no-repeat; }
+.obitlinks h3 a {display: block; width: 100%; height: 100%;}
+.obitlinks h3 span {display: none;}
+.obitlinks ul {margin: 0; padding: 1 3 5; list-style: none;}
+.obitseperator {}
+
+
+#condList .forest { background-image: url(images/listing-background-forest.jpg);}
+#condList .dove { background-image: url(images/listing-background-dove.jpg);}
+#condList .creek { background-image: url(images/listing-background-creek.jpg);}
+#condList .wheatfield { background-image: url(images/listing-background-wheatfield.jpg);}
+#condList .waterfall { background-image: url(images/listing-background-waterfall.jpg);}
+#condList .roses { background-image: url(images/listing-background-roses.jpg);}
+
+#condList .v4_angelic,
+#condList .v4fr_angelic { background-image: url(images/listing-background-v4_angelic.jpg);}
+#condList .v4_forest,
+#condList .v4fr_forest { background-image: url(images/listing-background-v4_forest.jpg);}
+#condList .v4_garden,
+#condList .v4fr_garden { background-image: url(images/listing-background-v4_garden.jpg);}
+#condList .v4_golf,
+#condList .v4fr_golf { background-image: url(images/listing-background-v4_golf.jpg);}
+#condList .v4_retro,
+#condList .v4fr_retro { background-image: url(images/listing-background-v4_retro.jpg);}
+#condList .v4_rose,
+#condList .v4fr_rose { background-image: url(images/listing-background-v4_rose.jpg);}
+#condList .v4_vet1,
+#condList .v4fr_vet1 { background-image: url(images/listing-background-v4_vets.jpg);}
+#condList .v4_vet2,
+#condList .v4fr_vet2 { background-image: url(images/listing-background-v4_vets.jpg);}
+#condList .v4_victorian,
+#condList .v4fr_victorian { background-image: url(images/listing-background-v4_victorian.jpg);}
+#condList .v4_vintage,
+#condList .v4fr_vintage { background-image: url(images/listing-background-v4_vintage.jpg);}
+#condList .v4_child,
+#condList .v4fr_child { background-image: url(images/listing-background-v4_child.jpg);}
+#condList .v4_star,
+#condList .v4fr_star { background-image: url(images/listing-background-v4_starofdavid.jpg);}
+#condList .v4_sunset,
+#condList .v4fr_sunset { background-image: url(images/listing-background-wheatfield.jpg); }
+#condList .v4_islamic,
+#condList .v4fr_islamic { background-image: url(images/listing-background-v4_islamic.jpg); }
+#condList .v4_vetmemorial,
+#condList .v4fr_vetmemorial { background-image: url(images/listing-background-v4_vetmemorial.jpg); }
+
+#condList .v4_custom-hallsharbour { background-image: url(images/listing-background-v4_halls-harbour.jpg); }
+#condList .v4_custom-hindu { background-image: url(images/listing-background-v4_hindu.jpg); }
+#condList .v4_custom-sikh { background-image: url(images/listing-background-v4_sikh.jpg); }
+#condList .v4_custom-levine { background-image: url(images/listing-background-v4_levine.jpg); }
+#condList .v4_custom-peggyscove { background-image: url(images/listing-background-v4_peggys-cove.jpg); }
+#condList .v4_christian { background-image: url(images/listing-background-v4_christian.jpg); }
+#condList .v4_christian_cross { background-image: url(images/listing-background-v4_christian-cross.jpg); }
+#condList .v4_fisherman { background-image: url(images/listing-background-v4_fisherman.jpg); }

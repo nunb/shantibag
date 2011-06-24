@@ -1,0 +1,144 @@
+/* *********************************************************** */
+/*                      CONTENT STYLES                         */
+/* *********************************************************** */
+/*    NOTE: Make sure to define the body font-size in layout   */
+/*          section below, as a lot of the layout is em based  */
+/* *********************************************************** */
+
+body {font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 10px; color: #666666; background: #191717;}
+
+h1, h2, h3, h4, h5, h6 {padding: 1em 0 0 0; color: #4f7342; font-family: Georgia, serif;}
+/*h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {text-decoration: none;}*/
+h1 {font-size: 2em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.4em;}
+h4 {font-size: 1.2em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1.2em;}
+
+a {color: #4f7342;}
+a:hover {}
+p, ol, ul, dl, dt, td, th {margin-bottom: 1em; line-height: 1.6em; font-size: 1.15em;}
+
+/* *********************************************************** */
+/*                   DEFAULT LAYOUT STYLES                     */
+/* *********************************************************** */
+
+html, body {height: 100%; min-height: 100%; }        
+#sitewrapper,
+#pagewrapper {position: relative; height: auto !important; min-height: 100%;}
+#sitewrapper,
+#footer {width: 770px;}
+#sitewrapper {margin: 0 auto; background-image: url(sitewrapper-bg.gif); background-repeat: repeat-y;}
+#pagewrapper {padding-bottom: 60px;}
+#header {height: 188px; background: url(header-mp-bg.jpg) repeat-x;}
+#navigation {margin-top: 65px; padding-left: 8px; color: #ffffff; font-weight: bold;}
+#navigation a {color: #935549;}
+#bodywrapper {padding: 40px 20px;}
+#column1,
+#column2,
+#column3 {float: left;}
+#column1 {position: relative; top: -25px; width: 174px;}
+#column2 {width: 595px;}
+#column3 {width: 144px;}
+#logo {height: 188px; width: 620px; float: left;}
+#logo a {display: block; height: 162px; width: 235px;}
+#logo span {display: none;}
+#quicksearch {margin-left: 7px; padding: 5px 0 5px 8px; float: left; width: 159px; background-color: #7e7e7e;}
+#quicksearch p {margin: 0; color: #ffffff;}
+#deathnotices {padding-top: 110px; width: 144px; float: left; text-align: center; color: #fff;}
+#deathnotices span {display: none;}
+#deathnotices img {margin-left: -4px;}
+#date {position: relative; top: -22px; padding: 5px 0 5px 10px; color: #fff; font-style: italic;}
+#bggradient {position: absolute; top: -10px; width: 100%; height: 500px; left: 0; top: 0; background-image: url(header-gradient.gif); background-repeat: repeat-x;}
+/*#bggradient {background: url(header-gradient.gif) repeat-x;}*/
+#bodywrapper ul li,
+#sitewrapperHP #bodywrapper ul li,
+#bodywrapperHP ul li {margin-left: 40px; list-style-image: url(bullet.png); }
+#sitewrapperTP #bodywrapper ul li {margin: 0; list-style-type: none; list-style-image: none;}
+#footer {position: absolute; bottom: 0; left: 0; margin: 0 auto; padding-top: 10px; height: 50px; width: 770px; color: #fff; background: #191717 url(footer-bg.gif) no-repeat; text-align: center;}
+#footer p {font-size: 1em;}
+#footer a {color: #4f7342; text-decoration: none;}
+.clear {clear: both;}
+
+/* *********************************************************** */
+/*                      HOME PAGE STYLES                       */
+/* *********************************************************** */
+
+#sitewrapperHP {position: relative; margin: 0 auto; height: auto !important; min-height: 100%; width: 770px; color: #000; background-image: url(sitewrapperHP-bg.gif); background-repeat: repeat-y;}
+#sitewrapperHP #column2 {width: 446px; float: left;}
+#sitewrapperHP #bodywrapper {width: 400px;}
+#deathnoticesHP {padding-top: 160px; width: 144px; height: 90px; float: left; text-align: center; color: #fff; font-size: .85em; background-image: url(condolences-bg.jpg); background-repeat: no-repeat;}
+#deathnoticesHP p {line-height: 1em;}
+#deathnoticesHP span {display: none;}
+#deathnoticesHP a {color: #000000;}
+
+/* *********************************************************** */
+/*                   ADVANTAGE PLUS STYLES                     */
+/* *********************************************************** */
+
+#sitewrapperTP,
+#sitewrapperTP #pagewrapper {position: relative; height: auto !important; min-height: 100%;}
+#sitewrapperTP,
+#sitewrapperTP #footer {width: 760px; margin: 0 auto; color: #ffffff; background-image: url(sitewrapperTP-bg.gif); background-repeat: repeat-y;}
+#sitewrapperTP .module a {cursor: pointer; color: #ffffff;}
+#sitewrapperTP #header {width: 750px; height: 300px; background-image: url(headerTP-bg.jpg); background-repeat: no-repeat;}
+#sitewrapperTP #header span {display: none;}
+#sitewrapperTP #header #logo {width: 760px; height: 300px; background-image: url(logoTP-bg.jpg); background-repeat: no-repeat;}
+#sitewrapperTP #header #logo a {}
+#sitewrapperTP #header #address {width: 500px; margin-top: 30px; float: right; color: #fff; font-weight: bold;}
+#sitewrapperTP #navigation {position: absolute; right: 50px; top: 216px;}
+#sitewrapperTP #navigation li {float: left;}
+#sitewrapperTP #entersite-btn span,
+#sitewrapperTP #condolence-btn span {display: none;}
+#sitewrapperTP #entersite-btn a {display: block; width: 195px; height: 30px;}
+#sitewrapperTP #condolence-btn a {display: block; width: 195px; height: 30px;}
+#sitewrapperTP #entersite-btn a {margin-right: 10px; background-image: url(entersite-btn.gif); background-repeat: no-repeat;}
+#sitewrapperTP #condolence-btn a {background-image: url(condolencesTP-btn.gif); background-repeat: no-repeat;}
+#sitewrapperTP #bodywrapper {padding: 0 50px; width: 665px;}
+#sitewrapperTP #column1 {margin: 40px 13px 15px 0; padding: 0 20px; width: 450px; float: left; color: #000000; background-image: url(column1-TP-bg.gif); background-repeat: repeat-x;}
+#sitewrapperTP #column1a {margin-right: 20px; width: 315px; float: left;}
+#sitewrapperTP #column1b {width: 315px; float: left;}
+#sitewrapperTP #column2 {margin-top: 40px; width: 190px; float: left; color: #fff;}
+#welcome,
+#funeralnews {border-bottom: 1px solid #ffffff;}
+#deathnoticesTP {padding: 125px 15px 10px 10px; font-size: 0.9em; text-align: center; background-image: url(condolencesTP-bg.jpg); background-repeat: no-repeat;}
+#sitewrapperTP #servicecontrols a {color: #ffffff;}
+#sitewrapperTP #servicecontrols .sep {color: #336666;}
+#sitewrapperTP #CurrentRecords,
+#sitewrapperTP #PastRecords {color: #336666;}
+#sitewrapperTP #CurrentRecords a,
+#sitewrapperTP #PastRecords a {color: #336666;}
+#sitewrapperTP #ourlocation #map {height: 150px; width: 100%;}
+#sitewrapperTP #funeralnews {padding: 0 15px 25px 10px; background-image: url(funeralnews-bottomBG.png); background-repeat: no-repeat; background-position: bottom;}
+#bggradientTP {background: url(header-gradientTP.gif) repeat-x;}
+#sitewrapperTP h1 {color: #4f7342;}
+#funeralnews h2,
+#services h2,
+#ourlocation h2,
+#localweather h2,
+#localairlines h2 {padding-bottom: 10px; color: #4f7342;}
+#localweather {color: #ffffff;}
+#localairlines a {display: block; padding: 5px 0; border-bottom: 1px solid #855e54;}
+#myMap {width: 100%; height: 100%;}
+#sitewrapperTP #footer {height: 60px; width: 758px;}
+#footer a,
+#sitewrapperTP #footer a {color: #4f7342;}
+/*.TP {background-color: #473333;}*/
+.news_article {color: #fff;}
+.news_date {color: #336666;}
+
+/* *********************************************************** */
+/*                        FORM STYLES                          */
+/* *********************************************************** */
+
+form input,
+form select,
+form textarea {
+    margin-right: 5px;
+    font-size: 1em;
+    padding: 0px;
+    margin: 0;
+    border: 1px solid #3a6c3c;
+    background-color: #fff;
+}

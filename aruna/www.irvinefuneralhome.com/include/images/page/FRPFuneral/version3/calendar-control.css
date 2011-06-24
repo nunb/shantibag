@@ -1,0 +1,91 @@
+
+
+#condSearch {
+    position: relative;
+    z-index: 100000;
+}
+#condSearch #date-range-display {
+	float: left;
+        text-align: right;
+	overflow: hidden;
+	line-height: 22px;
+}
+
+#condSearch div.cal-button {
+    width: 16px;
+    height: 22px;
+    margin-top: 3px;
+    margin-left: 2px;
+    background: url(calendar-blue.png) 0 0 no-repeat;
+    cursor: pointer;
+    float: left;
+	display: inline;
+}
+
+#condSearch div.clearButton {
+    width: 16px;
+    height: 22px;
+    margin-left: 3px;
+    background: url(eraser.png) center center no-repeat;
+    cursor: pointer;
+    margin-right: 2px;
+    float: left;
+	display: inline;
+}
+
+.yui-skin-sam #cal-container {
+	position: absolute;
+	bottom: -230px;
+        width: 370px;
+        font-size: 10px;
+	left: 0;
+}
+
+.yui-skin-sam #cal-container tr {
+	padding: 1px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	text-align: center;
+	line-height: 1em;
+}
+
+/* Overriding the styles inherited from the list */ 
+.yui-skin-sam #cal-container td.calcell {
+	padding: 1px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	text-align: center;
+}
+
+.yui-skin-sam #cal-container td.calcell a {
+	color: #0066CC;
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	text-align: center;
+}
+
+.yui-skin-sam #cal-container a {
+	border: 1px solid #F2F2F2;
+	color: #000000;
+	padding: 0 4px;
+	text-decoration: none;
+	float: none;
+	display: block;
+	vertical-align: middle;
+	padding-left: 0px;
+}
+
+.yui-skin-sam #cal-container .yui-cal-nav {
+    background-color: #d4dee7;
+}
+
+.yui-skin-sam .searchfield-container {
+    text-align: right;
+}
+
+#condControls {
+    margin-bottom: 30px;
+}
+
+/*#date-range-display {display: none;}
+#show-calendar {display: none;}
+#clear-calendar {display: none;}*/
